@@ -1,0 +1,463 @@
+EESchema Schematic File Version 4
+LIBS:harmonic jerkulator-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "sam. 04 avril 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4ms-headers:Conn_01x01 J1
+U 1 1 5D2D62B6
+P 1950 1650
+F 0 "J1" H 1868 1425 50  0000 C CNN
+F 1 "9V" H 1868 1516 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 1950 1650 50  0001 C CNN
+F 3 "" H 1950 1650 50  0001 C CNN
+	1    1950 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J2
+U 1 1 5D2D6860
+P 1950 2500
+F 0 "J2" H 1868 2275 50  0000 C CNN
+F 1 "GND" H 1868 2366 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 1950 2500 50  0001 C CNN
+F 3 "" H 1950 2500 50  0001 C CNN
+	1    1950 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-passives:DIODE_TH D1
+U 1 1 5D2D6B9B
+P 2350 2000
+F 0 "D1" V 2304 2079 50  0000 L CNN
+F 1 "1N4002" V 2395 2079 50  0000 L CNN
+F 2 "4ms-footprints:Diode_BAT-85S_TH" H 2250 2000 50  0001 C CNN
+F 3 "" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:CAP-ELEC-TH C1
+U 1 1 5D2D7AB4
+P 2750 1950
+F 0 "C1" H 2878 1942 45  0000 L CNN
+F 1 "47u" H 2878 1858 45  0000 L CNN
+F 2 "4ms-footprints:Cap_Electrolytic_TH" H 2780 2100 20  0001 C CNN
+F 3 "" H 2750 1950 60  0001 C CNN
+	1    2750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1650 2400 1650
+Wire Wire Line
+	2550 1650 2550 1850
+Wire Wire Line
+	2550 1850 2350 1850
+Wire Wire Line
+	2550 1850 2750 1850
+Connection ~ 2550 1850
+Wire Wire Line
+	2750 2150 2550 2150
+Wire Wire Line
+	2550 2150 2550 2500
+Wire Wire Line
+	2550 2500 2400 2500
+Connection ~ 2550 2150
+Wire Wire Line
+	2550 2150 2350 2150
+$Comp
+L 4ms-power:GND #PWR0101
+U 1 1 5D2D87F9
+P 2400 2500
+F 0 "#PWR0101" H 2400 2250 50  0001 C CNN
+F 1 "GND" H 2405 2327 50  0000 C CNN
+F 2 "" H 2400 2500 50  0001 C CNN
+F 3 "" H 2400 2500 50  0001 C CNN
+	1    2400 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 2500
+$Comp
+L 4ms-power:PWR_FLAG #FLG0101
+U 1 1 5D2D8E52
+P 2550 2500
+F 0 "#FLG0101" H 2550 2575 50  0001 C CNN
+F 1 "PWR_FLAG" V 2550 2628 50  0000 L CNN
+F 2 "" H 2550 2500 50  0001 C CNN
+F 3 "" H 2550 2500 50  0001 C CNN
+	1    2550 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 2500
+$Comp
+L 4ms-power:PWR_FLAG #FLG0102
+U 1 1 5D2D9100
+P 2550 1650
+F 0 "#FLG0102" H 2550 1725 50  0001 C CNN
+F 1 "PWR_FLAG" V 2550 1778 50  0000 L CNN
+F 2 "" H 2550 1650 50  0001 C CNN
+F 3 "" H 2550 1650 50  0001 C CNN
+	1    2550 1650
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 1650
+$Comp
+L power:+9V #PWR0102
+U 1 1 5D2D9287
+P 2400 1650
+F 0 "#PWR0102" H 2400 1500 50  0001 C CNN
+F 1 "+9V" H 2415 1823 50  0000 C CNN
+F 2 "" H 2400 1650 50  0001 C CNN
+F 3 "" H 2400 1650 50  0001 C CNN
+	1    2400 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 1650
+Wire Wire Line
+	2400 1650 2550 1650
+$Comp
+L power:+9V #PWR0103
+U 1 1 5D2D9780
+P 3450 1600
+F 0 "#PWR0103" H 3450 1450 50  0001 C CNN
+F 1 "+9V" H 3465 1773 50  0000 C CNN
+F 2 "" H 3450 1600 50  0001 C CNN
+F 3 "" H 3450 1600 50  0001 C CNN
+	1    3450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D2D9EAF
+P 3450 1800
+F 0 "R1" H 3518 1846 50  0000 L CNN
+F 1 "LEDR" H 3518 1755 50  0000 L CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3450 1800 50  0001 C CNN
+F 3 "~" H 3450 1800 50  0001 C CNN
+	1    3450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:LED-C1-A2 LED1
+U 1 1 5D2DA259
+P 3450 2200
+F 0 "LED1" V 3542 2122 45  0000 R CNN
+F 1 "LED-C1-A2" V 3458 2122 45  0000 R CNN
+F 2 "4ms-footprints:LED-C1-A2-3MM-VERT" H 3480 2350 20  0001 C CNN
+F 3 "" H 3450 2200 60  0001 C CNN
+	1    3450 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J5
+U 1 1 5D2DACD8
+P 3450 2600
+F 0 "J5" V 3322 2680 50  0000 L CNN
+F 1 "SW" V 3413 2680 50  0000 L CNN
+F 2 "4ms_Connector:WireHole" H 3450 2600 50  0001 C CNN
+F 3 "" H 3450 2600 50  0001 C CNN
+	1    3450 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2400 3450 2300
+Wire Wire Line
+	3450 1900 3450 2000
+Wire Wire Line
+	3450 1700 3450 1600
+$Comp
+L 4ms-headers:Conn_01x01 J3
+U 1 1 5D2DB6C6
+P 1800 4650
+F 0 "J3" H 1718 4425 50  0000 C CNN
+F 1 "In" H 1718 4516 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 1800 4650 50  0001 C CNN
+F 3 "" H 1800 4650 50  0001 C CNN
+	1    1800 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J4
+U 1 1 5D2DC0D0
+P 5150 4000
+F 0 "J4" H 5230 4042 50  0000 L CNN
+F 1 "Out" H 5230 3951 50  0000 L CNN
+F 2 "4ms_Connector:WireHole" H 5150 4000 50  0001 C CNN
+F 3 "" H 5150 4000 50  0001 C CNN
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 5D31C2D8
+P 3500 3450
+F 0 "R4" H 3568 3496 50  0000 L CNN
+F 1 "22k" H 3568 3405 50  0000 L CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3500 3450 50  0001 C CNN
+F 3 "~" H 3500 3450 50  0001 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5D31CDD1
+P 3300 3800
+F 0 "R3" V 3095 3800 50  0000 C CNN
+F 1 "100k" V 3186 3800 50  0000 C CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3300 3800 50  0001 C CNN
+F 3 "~" H 3300 3800 50  0001 C CNN
+	1    3300 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q1
+U 1 1 5D31DCA1
+P 3400 4150
+F 0 "Q1" H 3591 4196 50  0000 L CNN
+F 1 "2n3904" H 3591 4105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3600 4250 50  0001 C CNN
+F 3 "~" H 3400 4150 50  0001 C CNN
+	1    3400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3550 3500 3800
+Wire Wire Line
+	3500 3800 3400 3800
+Connection ~ 3500 3800
+$Comp
+L 4ms-passives:CAP-ELEC-TH C4
+U 1 1 5D320F99
+P 4200 4600
+F 0 "C4" H 4328 4592 45  0000 L CNN
+F 1 "22u" H 4328 4508 45  0000 L CNN
+F 2 "4ms-footprints:Cap_Electrolytic_TH" H 4230 4750 20  0001 C CNN
+F 3 "" H 4200 4600 60  0001 C CNN
+	1    4200 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4450 4200 4500
+Wire Wire Line
+	3500 4450 3500 4350
+$Comp
+L Device:R_POT_US RV1
+U 1 1 5D3231E2
+P 2200 4950
+F 0 "RV1" H 2132 4904 50  0000 R CNN
+F 1 "Gain 100kB" H 2132 4995 50  0000 R CNN
+F 2 "4ms_Potentiometer:Pot_16mm_NoDet_RV16AF-4A" H 2200 4950 50  0001 C CNN
+F 3 "~" H 2200 4950 50  0001 C CNN
+	1    2200 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0104
+U 1 1 5D325607
+P 2200 5450
+F 0 "#PWR0104" H 2200 5200 50  0001 C CNN
+F 1 "GND" H 2205 5277 50  0000 C CNN
+F 2 "" H 2200 5450 50  0001 C CNN
+F 3 "" H 2200 5450 50  0001 C CNN
+	1    2200 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C2
+U 1 1 5D3262CF
+P 2650 4950
+F 0 "C2" V 2398 4950 50  0000 C CNN
+F 1 "20n" V 2489 4950 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 2688 4800 50  0001 C CNN
+F 3 "" H 2650 4950 50  0001 C CNN
+	1    2650 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 4950 2350 4950
+$Comp
+L 4ms-power:GND #PWR0105
+U 1 1 5D32AEF6
+P 4200 4800
+F 0 "#PWR0105" H 4200 4550 50  0001 C CNN
+F 1 "GND" H 4205 4627 50  0000 C CNN
+F 2 "" H 4200 4800 50  0001 C CNN
+F 3 "" H 4200 4800 50  0001 C CNN
+	1    4200 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0106
+U 1 1 5D32B78A
+P 3500 5700
+F 0 "#PWR0106" H 3500 5450 50  0001 C CNN
+F 1 "GND" V 3505 5572 50  0000 R CNN
+F 2 "" H 3500 5700 50  0001 C CNN
+F 3 "" H 3500 5700 50  0001 C CNN
+	1    3500 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4650 2200 4650
+Wire Wire Line
+	2200 4650 2200 4800
+$Comp
+L Device:R_Small_US R2
+U 1 1 5D32C760
+P 2200 5250
+F 0 "R2" H 2268 5296 50  0000 L CNN
+F 1 "1k" H 2268 5205 50  0000 L CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2200 5250 50  0001 C CNN
+F 3 "~" H 2200 5250 50  0001 C CNN
+	1    2200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5100 2200 5150
+Wire Wire Line
+	2200 5350 2200 5450
+Wire Wire Line
+	4200 4450 3500 4450
+Wire Wire Line
+	3050 4150 3200 4150
+Wire Wire Line
+	3200 3800 3050 3800
+Wire Wire Line
+	3050 3800 3050 4150
+$Comp
+L 4ms-passives:CAP_TH C5
+U 1 1 5D335BA6
+P 4100 3800
+F 0 "C5" V 3848 3800 50  0000 C CNN
+F 1 "100n" V 3939 3800 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 4138 3650 50  0001 C CNN
+F 3 "" H 4100 3800 50  0001 C CNN
+	1    4100 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 3800 3500 3800
+Wire Wire Line
+	4750 4000 4950 4000
+$Comp
+L 4ms-power:GND #PWR0107
+U 1 1 5D33C11C
+P 4600 4250
+F 0 "#PWR0107" H 4600 4000 50  0001 C CNN
+F 1 "GND" H 4605 4077 50  0000 C CNN
+F 2 "" H 4600 4250 50  0001 C CNN
+F 3 "" H 4600 4250 50  0001 C CNN
+	1    4600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4250 4600 4150
+$Comp
+L Device:R_POT_US RV2
+U 1 1 5D323AC9
+P 4600 4000
+F 0 "RV2" H 4532 3954 50  0000 R CNN
+F 1 "Volume 100kB" H 4532 4045 50  0000 R CNN
+F 2 "4ms_Potentiometer:Pot_16mm_NoDet_RV16AF-4A" H 4600 4000 50  0001 C CNN
+F 3 "~" H 4600 4000 50  0001 C CNN
+	1    4600 4000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+9V #PWR0108
+U 1 1 5D33D950
+P 3500 3350
+F 0 "#PWR0108" H 3500 3200 50  0001 C CNN
+F 1 "+9V" H 3515 3523 50  0000 C CNN
+F 2 "" H 3500 3350 50  0001 C CNN
+F 3 "" H 3500 3350 50  0001 C CNN
+	1    3500 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 5350
+Wire Wire Line
+	3500 5150 3500 5350
+Wire Wire Line
+	3500 5350 3500 5500
+$Comp
+L Device:R_Small_US R6
+U 1 1 5D329C5F
+P 3500 5600
+F 0 "R6" H 3432 5554 50  0000 R CNN
+F 1 "22k" H 3432 5645 50  0000 R CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3500 5600 50  0001 C CNN
+F 3 "~" H 3500 5600 50  0001 C CNN
+	1    3500 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R5
+U 1 1 5D321D7A
+P 2900 5350
+F 0 "R5" V 2695 5350 50  0000 C CNN
+F 1 "1M" V 2786 5350 50  0000 C CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2900 5350 50  0001 C CNN
+F 3 "~" H 2900 5350 50  0001 C CNN
+	1    2900 5350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:Q_PNP_CBE Q2
+U 1 1 5D31E92E
+P 3400 4950
+F 0 "Q2" H 3591 4904 50  0000 L CNN
+F 1 "2n3906" H 3591 4995 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3600 5050 50  0001 C CNN
+F 3 "~" H 3400 4950 50  0001 C CNN
+	1    3400 4950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3500 4750 3500 4450
+Connection ~ 3500 4450
+Wire Wire Line
+	3200 4950 2800 4950
+Wire Wire Line
+	2800 4950 2800 5350
+Connection ~ 2800 4950
+Wire Wire Line
+	3000 5350 3050 5350
+$Comp
+L 4ms-passives:CAP_TH C3
+U 1 1 5D42DA5C
+P 3050 4500
+F 0 "C3" H 3165 4546 50  0000 L CNN
+F 1 "50n" H 3165 4455 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 3088 4350 50  0001 C CNN
+F 3 "" H 3050 4500 50  0001 C CNN
+	1    3050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4150 3050 4350
+Connection ~ 3050 4150
+Wire Wire Line
+	3050 4650 3050 5350
+Connection ~ 3050 5350
+Wire Wire Line
+	3050 5350 3500 5350
+Wire Wire Line
+	3500 3800 3500 3950
+Wire Wire Line
+	4600 3800 4600 3850
+Wire Wire Line
+	4250 3800 4600 3800
+Wire Wire Line
+	2150 2500 2400 2500
+$EndSCHEMATC

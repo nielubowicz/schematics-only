@@ -1,0 +1,247 @@
+EESchema Schematic File Version 4
+LIBS:baxandall-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "sam. 04 avril 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4ms-headers:Conn_01x01 J1
+U 1 1 5D2D6860
+P 2850 2450
+F 0 "J1" H 2768 2225 50  0000 C CNN
+F 1 "GND" H 2768 2316 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 2850 2450 50  0001 C CNN
+F 3 "" H 2850 2450 50  0001 C CNN
+	1    2850 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 2450 3300 2450
+$Comp
+L 4ms-power:GND #PWR0101
+U 1 1 5D2D87F9
+P 3300 2450
+F 0 "#PWR0101" H 3300 2200 50  0001 C CNN
+F 1 "GND" H 3305 2277 50  0000 C CNN
+F 2 "" H 3300 2450 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 2450
+Wire Wire Line
+	3300 2450 3050 2450
+$Comp
+L 4ms-power:PWR_FLAG #FLG0101
+U 1 1 5D2D8E52
+P 3450 2450
+F 0 "#FLG0101" H 3450 2525 50  0001 C CNN
+F 1 "PWR_FLAG" V 3450 2578 50  0000 L CNN
+F 2 "" H 3450 2450 50  0001 C CNN
+F 3 "" H 3450 2450 50  0001 C CNN
+	1    3450 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J2
+U 1 1 5D2DB6C6
+P 5150 1500
+F 0 "J2" H 5068 1275 50  0000 C CNN
+F 1 "In" H 5068 1366 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 5150 1500 50  0001 C CNN
+F 3 "" H 5150 1500 50  0001 C CNN
+	1    5150 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J3
+U 1 1 5D2DC0D0
+P 6050 1550
+F 0 "J3" H 6130 1592 50  0000 L CNN
+F 1 "Out" H 6130 1501 50  0000 L CNN
+F 2 "4ms_Connector:WireHole" H 6050 1550 50  0001 C CNN
+F 3 "" H 6050 1550 50  0001 C CNN
+	1    6050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D301B38
+P 5250 1850
+F 0 "R1" V 5045 1850 50  0000 C CNN
+F 1 "10k" V 5136 1850 50  0000 C CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5250 1850 50  0001 C CNN
+F 3 "~" H 5250 1850 50  0001 C CNN
+	1    5250 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5D302BC3
+P 5450 2350
+F 0 "R3" V 5655 2350 50  0000 C CNN
+F 1 "10k" V 5564 2350 50  0000 C CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5450 2350 50  0001 C CNN
+F 3 "~" H 5450 2350 50  0001 C CNN
+	1    5450 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5D3034BD
+P 5250 2900
+F 0 "R2" V 5455 2900 50  0000 C CNN
+F 1 "1k" V 5364 2900 50  0000 C CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5250 2900 50  0001 C CNN
+F 3 "~" H 5250 2900 50  0001 C CNN
+	1    5250 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C1
+U 1 1 5D303F6C
+P 5000 2150
+F 0 "C1" H 5115 2196 50  0000 L CNN
+F 1 "22n" H 5115 2105 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 5038 2000 50  0001 C CNN
+F 3 "" H 5000 2150 50  0001 C CNN
+	1    5000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C2
+U 1 1 5D30470B
+P 5000 2550
+F 0 "C2" H 4885 2596 50  0000 R CNN
+F 1 "220n" H 4885 2505 50  0000 R CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 5038 2400 50  0001 C CNN
+F 3 "" H 5000 2550 50  0001 C CNN
+	1    5000 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C3
+U 1 1 5D305D0D
+P 5900 2000
+F 0 "C3" H 6015 2046 50  0000 L CNN
+F 1 "2n2" H 6015 1955 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 5938 1850 50  0001 C CNN
+F 3 "" H 5900 2000 50  0001 C CNN
+	1    5900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV1
+U 1 1 5D30661B
+P 4650 2350
+F 0 "RV1" H 4582 2396 50  0000 R CNN
+F 1 "Bass 100k" H 4582 2305 50  0000 R CNN
+F 2 "4ms_Potentiometer:Pot_16mm_NoDet_RV16AF-4A" H 4650 2350 50  0001 C CNN
+F 3 "~" H 4650 2350 50  0001 C CNN
+	1    4650 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_POT_US RV2
+U 1 1 5D306C9F
+P 5900 2350
+F 0 "RV2" H 5832 2304 50  0000 R CNN
+F 1 "Treble 100k" H 5832 2395 50  0000 R CNN
+F 2 "4ms_Potentiometer:Pot_16mm_NoDet_RV16AF-4A" H 5900 2350 50  0001 C CNN
+F 3 "~" H 5900 2350 50  0001 C CNN
+	1    5900 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C4
+U 1 1 5D308803
+P 5900 2700
+F 0 "C4" H 6015 2746 50  0000 L CNN
+F 1 "22n" H 6015 2655 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 5938 2550 50  0001 C CNN
+F 3 "" H 5900 2700 50  0001 C CNN
+	1    5900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1500 5550 1500
+Wire Wire Line
+	5550 1850 5350 1850
+Wire Wire Line
+	5150 1850 5000 1850
+Wire Wire Line
+	5000 1950 5000 2000
+Wire Wire Line
+	5000 1950 4650 1950
+Wire Wire Line
+	4650 1950 4650 2200
+Wire Wire Line
+	4800 2350 5000 2350
+Wire Wire Line
+	5000 2350 5000 2300
+Wire Wire Line
+	5000 2350 5000 2400
+Connection ~ 5000 2350
+Wire Wire Line
+	4650 2500 4650 2700
+Wire Wire Line
+	4650 2700 5000 2700
+Wire Wire Line
+	5900 2200 5900 2150
+Wire Wire Line
+	5900 2500 5900 2550
+Wire Wire Line
+	5750 2350 5650 2350
+Wire Wire Line
+	5350 2350 5000 2350
+Wire Wire Line
+	5000 2700 5000 2900
+Wire Wire Line
+	5000 2900 5150 2900
+Connection ~ 5000 2700
+Wire Wire Line
+	5350 2900 5500 2900
+Wire Wire Line
+	5900 2900 5900 2850
+Connection ~ 5550 1850
+Wire Wire Line
+	5550 1850 5900 1850
+Wire Wire Line
+	5550 1500 5550 1850
+Wire Wire Line
+	5000 1850 5000 1950
+Connection ~ 5000 1950
+$Comp
+L 4ms-power:GND #PWR0102
+U 1 1 5D310205
+P 5500 3050
+F 0 "#PWR0102" H 5500 2800 50  0001 C CNN
+F 1 "GND" H 5505 2877 50  0000 C CNN
+F 2 "" H 5500 3050 50  0001 C CNN
+F 3 "" H 5500 3050 50  0001 C CNN
+	1    5500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3050 5500 2900
+Connection ~ 5500 2900
+Wire Wire Line
+	5500 2900 5900 2900
+Wire Wire Line
+	5850 1550 5650 1550
+Wire Wire Line
+	5650 1550 5650 2350
+Connection ~ 5650 2350
+Wire Wire Line
+	5650 2350 5550 2350
+$EndSCHEMATC

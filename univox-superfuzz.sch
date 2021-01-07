@@ -1,0 +1,1347 @@
+EESchema Schematic File Version 4
+LIBS:univox-superfuzz-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "sam. 04 avril 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4ms-headers:Conn_01x01 J1
+U 1 1 5D2D62B6
+P 1950 1650
+F 0 "J1" H 1868 1425 50  0000 C CNN
+F 1 "9V" H 1868 1516 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 1950 1650 50  0001 C CNN
+F 3 "" H 1950 1650 50  0001 C CNN
+	1    1950 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J2
+U 1 1 5D2D6860
+P 1950 2500
+F 0 "J2" H 1868 2275 50  0000 C CNN
+F 1 "GND" H 1868 2366 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 1950 2500 50  0001 C CNN
+F 3 "" H 1950 2500 50  0001 C CNN
+	1    1950 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-passives:DIODE_TH D1
+U 1 1 5D2D6B9B
+P 2350 2000
+F 0 "D1" V 2304 2079 50  0000 L CNN
+F 1 "1N4002" V 2395 2079 50  0000 L CNN
+F 2 "4ms-footprints:Diode_BAT-85S_TH" H 2250 2000 50  0001 C CNN
+F 3 "" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:CAP-ELEC-TH C1
+U 1 1 5D2D7AB4
+P 2750 1950
+F 0 "C1" H 2878 1942 45  0000 L CNN
+F 1 "47u" H 2878 1858 45  0000 L CNN
+F 2 "4ms-footprints:Cap_Electrolytic_TH" H 2780 2100 20  0001 C CNN
+F 3 "" H 2750 1950 60  0001 C CNN
+	1    2750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1650 2400 1650
+Wire Wire Line
+	2550 1650 2550 1850
+Wire Wire Line
+	2550 1850 2350 1850
+Wire Wire Line
+	2550 1850 2750 1850
+Connection ~ 2550 1850
+Wire Wire Line
+	2750 2150 2550 2150
+Wire Wire Line
+	2550 2150 2550 2500
+Wire Wire Line
+	2550 2500 2400 2500
+Connection ~ 2550 2150
+Wire Wire Line
+	2550 2150 2350 2150
+$Comp
+L 4ms-power:GND #PWR0101
+U 1 1 5D2D87F9
+P 2400 2500
+F 0 "#PWR0101" H 2400 2250 50  0001 C CNN
+F 1 "GND" H 2405 2327 50  0000 C CNN
+F 2 "" H 2400 2500 50  0001 C CNN
+F 3 "" H 2400 2500 50  0001 C CNN
+	1    2400 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 2500
+Wire Wire Line
+	2400 2500 2150 2500
+$Comp
+L 4ms-power:PWR_FLAG #FLG0101
+U 1 1 5D2D8E52
+P 2550 2500
+F 0 "#FLG0101" H 2550 2575 50  0001 C CNN
+F 1 "PWR_FLAG" V 2550 2628 50  0000 L CNN
+F 2 "" H 2550 2500 50  0001 C CNN
+F 3 "" H 2550 2500 50  0001 C CNN
+	1    2550 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 2500
+$Comp
+L 4ms-power:PWR_FLAG #FLG0102
+U 1 1 5D2D9100
+P 2550 1650
+F 0 "#FLG0102" H 2550 1725 50  0001 C CNN
+F 1 "PWR_FLAG" V 2550 1778 50  0000 L CNN
+F 2 "" H 2550 1650 50  0001 C CNN
+F 3 "" H 2550 1650 50  0001 C CNN
+	1    2550 1650
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 1650
+$Comp
+L power:+9V #PWR0102
+U 1 1 5D2D9287
+P 2400 1650
+F 0 "#PWR0102" H 2400 1500 50  0001 C CNN
+F 1 "+9V" H 2415 1823 50  0000 C CNN
+F 2 "" H 2400 1650 50  0001 C CNN
+F 3 "" H 2400 1650 50  0001 C CNN
+	1    2400 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 1650
+Wire Wire Line
+	2400 1650 2550 1650
+$Comp
+L power:+9V #PWR0103
+U 1 1 5D2D9780
+P 3450 1600
+F 0 "#PWR0103" H 3450 1450 50  0001 C CNN
+F 1 "+9V" H 3465 1773 50  0000 C CNN
+F 2 "" H 3450 1600 50  0001 C CNN
+F 3 "" H 3450 1600 50  0001 C CNN
+	1    3450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R29
+U 1 1 5D2D9EAF
+P 3450 1800
+F 0 "R29" H 3518 1846 50  0000 L CNN
+F 1 "LEDR" H 3518 1755 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 3450 1800 50  0001 C CNN
+F 3 "~" H 3450 1800 50  0001 C CNN
+	1    3450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:LED-C1-A2 LED1
+U 1 1 5D2DA259
+P 3450 2200
+F 0 "LED1" V 3542 2122 45  0000 R CNN
+F 1 "LED-C1-A2" V 3458 2122 45  0000 R CNN
+F 2 "4ms-footprints:LED-C1-A2-3MM-VERT" H 3480 2350 20  0001 C CNN
+F 3 "" H 3450 2200 60  0001 C CNN
+	1    3450 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J5
+U 1 1 5D2DACD8
+P 3450 2600
+F 0 "J5" V 3322 2680 50  0000 L CNN
+F 1 "SW" V 3413 2680 50  0000 L CNN
+F 2 "4ms_Connector:WireHole" H 3450 2600 50  0001 C CNN
+F 3 "" H 3450 2600 50  0001 C CNN
+	1    3450 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2400 3450 2300
+Wire Wire Line
+	3450 1900 3450 2000
+Wire Wire Line
+	3450 1700 3450 1600
+$Comp
+L 4ms-headers:Conn_01x01 J3
+U 1 1 5D2DB6C6
+P 600 4050
+F 0 "J3" H 518 3825 50  0000 C CNN
+F 1 "In" H 518 3916 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 600 4050 50  0001 C CNN
+F 3 "" H 600 4050 50  0001 C CNN
+	1    600  4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J4
+U 1 1 5D2DC0D0
+P 10200 3200
+F 0 "J4" H 10280 3242 50  0000 L CNN
+F 1 "Out" H 10280 3151 50  0000 L CNN
+F 2 "4ms_Connector:WireHole" H 10200 3200 50  0001 C CNN
+F 3 "" H 10200 3200 50  0001 C CNN
+	1    10200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C2
+U 1 1 5D463C13
+P 1100 4050
+F 0 "C2" V 848 4050 50  0000 C CNN
+F 1 "10u" V 939 4050 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 1138 3900 50  0001 C CNN
+F 3 "" H 1100 4050 50  0001 C CNN
+	1    1100 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D464208
+P 1500 4050
+F 0 "R1" V 1295 4050 50  0000 C CNN
+F 1 "22k" V 1386 4050 50  0000 C CNN
+F 2 "bowicz-kicad-lib:Resistor" H 1500 4050 50  0001 C CNN
+F 3 "~" H 1500 4050 50  0001 C CNN
+	1    1500 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5D4650C5
+P 1650 4400
+F 0 "R2" H 1582 4354 50  0000 R CNN
+F 1 "100k" H 1582 4445 50  0000 R CNN
+F 2 "bowicz-kicad-lib:Resistor" H 1650 4400 50  0001 C CNN
+F 3 "~" H 1650 4400 50  0001 C CNN
+	1    1650 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5D46576B
+P 2000 4500
+F 0 "R3" H 2068 4546 50  0000 L CNN
+F 1 "100k" H 2068 4455 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 2000 4500 50  0001 C CNN
+F 3 "~" H 2000 4500 50  0001 C CNN
+	1    2000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 5D465CC3
+P 2450 4500
+F 0 "R4" H 2518 4546 50  0000 L CNN
+F 1 "1k8" H 2518 4455 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 2450 4500 50  0001 C CNN
+F 3 "~" H 2450 4500 50  0001 C CNN
+	1    2450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q1
+U 1 1 5D466579
+P 2350 4050
+F 0 "Q1" H 2541 4096 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 2541 4005 50  0000 L CNN
+F 2 "bowicz-kicad-lib:TO-92" H 2550 4150 50  0001 C CNN
+F 3 "~" H 2350 4050 50  0001 C CNN
+	1    2350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4050 2000 4050
+Wire Wire Line
+	1400 4050 1250 4050
+Wire Wire Line
+	950  4050 800  4050
+Wire Wire Line
+	1650 4300 1650 4050
+Connection ~ 1650 4050
+Wire Wire Line
+	1650 4050 1600 4050
+Wire Wire Line
+	2000 4050 2000 4400
+Connection ~ 2000 4050
+Wire Wire Line
+	2000 4050 1650 4050
+Wire Wire Line
+	2450 4400 2450 4250
+$Comp
+L 4ms-power:GND #PWR0104
+U 1 1 5D46AC18
+P 2450 4700
+F 0 "#PWR0104" H 2450 4450 50  0001 C CNN
+F 1 "GND" H 2455 4527 50  0000 C CNN
+F 2 "" H 2450 4700 50  0001 C CNN
+F 3 "" H 2450 4700 50  0001 C CNN
+	1    2450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0105
+U 1 1 5D46AE32
+P 2000 4700
+F 0 "#PWR0105" H 2000 4450 50  0001 C CNN
+F 1 "GND" H 2005 4527 50  0000 C CNN
+F 2 "" H 2000 4700 50  0001 C CNN
+F 3 "" H 2000 4700 50  0001 C CNN
+	1    2000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4700 2450 4600
+Wire Wire Line
+	2000 4600 2000 4700
+$Comp
+L Device:R_Small_US R8
+U 1 1 5D46BA0B
+P 2450 3400
+F 0 "R8" H 2518 3446 50  0000 L CNN
+F 1 "47k" H 2518 3355 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 2450 3400 50  0001 C CNN
+F 3 "~" H 2450 3400 50  0001 C CNN
+	1    2450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C6
+U 1 1 5D46C372
+P 3000 3400
+F 0 "C6" H 3115 3446 50  0000 L CNN
+F 1 "1n" H 3115 3355 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 3038 3250 50  0001 C CNN
+F 3 "" H 3000 3400 50  0001 C CNN
+	1    3000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q2
+U 1 1 5D46C8F7
+P 3200 4050
+F 0 "Q2" H 3391 4096 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 3391 4005 50  0000 L CNN
+F 2 "bowicz-kicad-lib:TO-92" H 3400 4150 50  0001 C CNN
+F 3 "~" H 3200 4050 50  0001 C CNN
+	1    3200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R5
+U 1 1 5D46D312
+P 2950 4550
+F 0 "R5" H 3018 4596 50  0000 L CNN
+F 1 "470k" H 3018 4505 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 2950 4550 50  0001 C CNN
+F 3 "~" H 2950 4550 50  0001 C CNN
+	1    2950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R7
+U 1 1 5D46D92C
+P 3300 4550
+F 0 "R7" H 3368 4596 50  0000 L CNN
+F 1 "10k" H 3368 4505 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 3300 4550 50  0001 C CNN
+F 3 "~" H 3300 4550 50  0001 C CNN
+	1    3300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R6
+U 1 1 5D46DF2A
+P 3350 5100
+F 0 "R6" V 3145 5100 50  0000 C CNN
+F 1 "47k" V 3236 5100 50  0000 C CNN
+F 2 "bowicz-kicad-lib:Resistor" H 3350 5100 50  0001 C CNN
+F 3 "~" H 3350 5100 50  0001 C CNN
+	1    3350 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C3
+U 1 1 5D46F012
+P 2950 5350
+F 0 "C3" H 2835 5304 50  0000 R CNN
+F 1 "100n" H 2835 5395 50  0000 R CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 2988 5200 50  0001 C CNN
+F 3 "" H 2950 5350 50  0001 C CNN
+	1    2950 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 5100 1650 4500
+Wire Wire Line
+	2950 4650 2950 5100
+Wire Wire Line
+	2950 5200 2950 5100
+Wire Wire Line
+	3300 4450 3300 4350
+Wire Wire Line
+	2950 4350 2950 4450
+Connection ~ 3300 4350
+Wire Wire Line
+	3300 4350 3300 4250
+Wire Wire Line
+	3000 3550 2450 3550
+Wire Wire Line
+	2450 3550 2450 3500
+Wire Wire Line
+	2450 3550 2450 3850
+Connection ~ 2450 3550
+Wire Wire Line
+	3000 4050 3000 3550
+Connection ~ 3000 3550
+$Comp
+L power:+9V #PWR0106
+U 1 1 5D47238C
+P 2450 3300
+F 0 "#PWR0106" H 2450 3150 50  0001 C CNN
+F 1 "+9V" H 2465 3473 50  0000 C CNN
+F 2 "" H 2450 3300 50  0001 C CNN
+F 3 "" H 2450 3300 50  0001 C CNN
+	1    2450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0107
+U 1 1 5D472A6F
+P 3000 3250
+F 0 "#PWR0107" H 3000 3100 50  0001 C CNN
+F 1 "+9V" H 3015 3423 50  0000 C CNN
+F 2 "" H 3000 3250 50  0001 C CNN
+F 3 "" H 3000 3250 50  0001 C CNN
+	1    3000 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 5100
+Wire Wire Line
+	2950 5100 1650 5100
+Wire Wire Line
+	2950 4350 3300 4350
+Wire Wire Line
+	2950 5100 3250 5100
+$Comp
+L 4ms-power:GND #PWR0108
+U 1 1 5D475DAE
+P 3300 4650
+F 0 "#PWR0108" H 3300 4400 50  0001 C CNN
+F 1 "GND" H 3305 4477 50  0000 C CNN
+F 2 "" H 3300 4650 50  0001 C CNN
+F 3 "" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C4
+U 1 1 5D47612F
+P 3750 4650
+F 0 "C4" H 3865 4696 50  0000 L CNN
+F 1 "10u" H 3865 4605 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 3788 4500 50  0001 C CNN
+F 3 "" H 3750 4650 50  0001 C CNN
+	1    3750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4800 3750 5100
+Wire Wire Line
+	3750 5100 3450 5100
+Wire Wire Line
+	3750 4500 3750 4350
+Wire Wire Line
+	3750 4350 3300 4350
+$Comp
+L power:+9V #PWR0109
+U 1 1 5D477BE4
+P 3300 3700
+F 0 "#PWR0109" H 3300 3550 50  0001 C CNN
+F 1 "+9V" H 3315 3873 50  0000 C CNN
+F 2 "" H 3300 3700 50  0001 C CNN
+F 3 "" H 3300 3700 50  0001 C CNN
+	1    3300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3850 3300 3700
+$Comp
+L 4ms-passives:CAP_TH C5
+U 1 1 5D478FAE
+P 4000 3800
+F 0 "C5" V 3748 3800 50  0000 C CNN
+F 1 "10u" V 3839 3800 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 4038 3650 50  0001 C CNN
+F 3 "" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 3800 3750 3800
+Wire Wire Line
+	3750 3800 3750 4350
+Connection ~ 3750 4350
+$Comp
+L Device:R_POT_US Expander1
+U 1 1 5D47A381
+P 4200 5300
+F 0 "Expander1" H 4132 5254 50  0000 R CNN
+F 1 "50kB" H 4132 5345 50  0000 R CNN
+F 2 "bowicz-kicad-lib:Pot_16mm" H 4200 5300 50  0001 C CNN
+F 3 "~" H 4200 5300 50  0001 C CNN
+	1    4200 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0110
+U 1 1 5D47B855
+P 4200 5550
+F 0 "#PWR0110" H 4200 5300 50  0001 C CNN
+F 1 "GND" H 4205 5377 50  0000 C CNN
+F 2 "" H 4200 5550 50  0001 C CNN
+F 3 "" H 4200 5550 50  0001 C CNN
+	1    4200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5550 4200 5450
+Wire Wire Line
+	4200 5150 4200 4900
+Wire Wire Line
+	4200 4900 4150 4900
+$Comp
+L 4ms-passives:CAP_TH C7
+U 1 1 5D47CFE0
+P 4600 5300
+F 0 "C7" V 4348 5300 50  0000 C CNN
+F 1 "CAP_TH" V 4439 5300 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 4638 5150 50  0001 C CNN
+F 3 "" H 4600 5300 50  0001 C CNN
+	1    4600 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 5300 4350 5300
+$Comp
+L Device:R_Small_US R9
+U 1 1 5D47E232
+P 4850 4850
+F 0 "R9" H 4918 4896 50  0000 L CNN
+F 1 "220k" H 4918 4805 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 4850 4850 50  0001 C CNN
+F 3 "~" H 4850 4850 50  0001 C CNN
+	1    4850 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R10
+U 1 1 5D47E742
+P 4850 5600
+F 0 "R10" H 4918 5646 50  0000 L CNN
+F 1 "150k" H 4918 5555 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 4850 5600 50  0001 C CNN
+F 3 "~" H 4850 5600 50  0001 C CNN
+	1    4850 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5500 4850 5300
+Wire Wire Line
+	4750 5300 4850 5300
+Connection ~ 4850 5300
+Wire Wire Line
+	4850 5300 4850 4950
+$Comp
+L power:+9V #PWR0111
+U 1 1 5D480AD2
+P 4850 4600
+F 0 "#PWR0111" H 4850 4450 50  0001 C CNN
+F 1 "+9V" H 4865 4773 50  0000 C CNN
+F 2 "" H 4850 4600 50  0001 C CNN
+F 3 "" H 4850 4600 50  0001 C CNN
+	1    4850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4750 4850 4600
+$Comp
+L Device:Q_NPN_CBE Q3
+U 1 1 5D4821F1
+P 5200 5300
+F 0 "Q3" H 5391 5346 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 5391 5255 50  0000 L CNN
+F 2 "bowicz-kicad-lib:TO-92" H 5400 5400 50  0001 C CNN
+F 3 "~" H 5200 5300 50  0001 C CNN
+	1    5200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5300 4850 5300
+$Comp
+L Device:R_Small_US R11
+U 1 1 5D4831A4
+P 5300 4800
+F 0 "R11" H 5368 4846 50  0000 L CNN
+F 1 "10k" H 5368 4755 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 5300 4800 50  0001 C CNN
+F 3 "~" H 5300 4800 50  0001 C CNN
+	1    5300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R12
+U 1 1 5D483719
+P 5300 5750
+F 0 "R12" H 5368 5796 50  0000 L CNN
+F 1 "10k" H 5368 5705 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 5300 5750 50  0001 C CNN
+F 3 "~" H 5300 5750 50  0001 C CNN
+	1    5300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C9
+U 1 1 5D483B6D
+P 5650 5600
+F 0 "C9" V 5398 5600 50  0000 C CNN
+F 1 "10u" V 5489 5600 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 5688 5450 50  0001 C CNN
+F 3 "" H 5650 5600 50  0001 C CNN
+	1    5650 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C8
+U 1 1 5D4843C7
+P 5700 5050
+F 0 "C8" V 5448 5050 50  0000 C CNN
+F 1 "10u" V 5539 5050 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 5738 4900 50  0001 C CNN
+F 3 "" H 5700 5050 50  0001 C CNN
+	1    5700 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 5050 5300 5050
+Wire Wire Line
+	5300 5050 5300 5100
+Wire Wire Line
+	5300 5050 5300 4900
+Connection ~ 5300 5050
+Wire Wire Line
+	5300 5500 5300 5600
+Wire Wire Line
+	5300 5600 5500 5600
+Connection ~ 5300 5600
+Wire Wire Line
+	5300 5600 5300 5650
+$Comp
+L power:+9V #PWR0112
+U 1 1 5D488047
+P 5300 4700
+F 0 "#PWR0112" H 5300 4550 50  0001 C CNN
+F 1 "+9V" H 5315 4873 50  0000 C CNN
+F 2 "" H 5300 4700 50  0001 C CNN
+F 3 "" H 5300 4700 50  0001 C CNN
+	1    5300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0113
+U 1 1 5D4888D0
+P 5300 5850
+F 0 "#PWR0113" H 5300 5600 50  0001 C CNN
+F 1 "GND" H 5305 5677 50  0000 C CNN
+F 2 "" H 5300 5850 50  0001 C CNN
+F 3 "" H 5300 5850 50  0001 C CNN
+	1    5300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0114
+U 1 1 5D488DB0
+P 4850 5700
+F 0 "#PWR0114" H 4850 5450 50  0001 C CNN
+F 1 "GND" H 4855 5527 50  0000 C CNN
+F 2 "" H 4850 5700 50  0001 C CNN
+F 3 "" H 4850 5700 50  0001 C CNN
+	1    4850 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R13
+U 1 1 5D4893F9
+P 6100 5050
+F 0 "R13" V 5895 5050 50  0000 C CNN
+F 1 "470" V 5986 5050 50  0000 C CNN
+F 2 "bowicz-kicad-lib:Resistor" H 6100 5050 50  0001 C CNN
+F 3 "~" H 6100 5050 50  0001 C CNN
+	1    6100 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R19
+U 1 1 5D489AD3
+P 5950 5800
+F 0 "R19" H 5882 5754 50  0000 R CNN
+F 1 "470" H 5882 5845 50  0000 R CNN
+F 2 "bowicz-kicad-lib:Resistor" H 5950 5800 50  0001 C CNN
+F 3 "~" H 5950 5800 50  0001 C CNN
+	1    5950 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R14
+U 1 1 5D48A64C
+P 6350 4800
+F 0 "R14" H 6418 4846 50  0000 L CNN
+F 1 "100k" H 6418 4755 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 6350 4800 50  0001 C CNN
+F 3 "~" H 6350 4800 50  0001 C CNN
+	1    6350 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5050 6000 5050
+Wire Wire Line
+	6200 5050 6350 5050
+Wire Wire Line
+	6350 5050 6350 4900
+Wire Wire Line
+	5800 5600 5950 5600
+Wire Wire Line
+	5950 5600 5950 5700
+$Comp
+L Device:Q_NPN_CBE Q5
+U 1 1 5D4CCB75
+P 7500 5200
+F 0 "Q5" H 7691 5246 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 7691 5155 50  0000 L CNN
+F 2 "bowicz-kicad-lib:TO-92" H 7700 5300 50  0001 C CNN
+F 3 "~" H 7500 5200 50  0001 C CNN
+	1    7500 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R15
+U 1 1 5D4CDFA1
+P 7000 4700
+F 0 "R15" H 7068 4746 50  0000 L CNN
+F 1 "10k" H 7068 4655 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 7000 4700 50  0001 C CNN
+F 3 "~" H 7000 4700 50  0001 C CNN
+	1    7000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5000 7000 5000
+Wire Wire Line
+	7000 5000 7000 4800
+Wire Wire Line
+	7000 5000 6650 5000
+Wire Wire Line
+	6650 5000 6650 5100
+Connection ~ 7000 5000
+Wire Wire Line
+	6350 5300 6350 5050
+Connection ~ 6350 5050
+Wire Wire Line
+	6650 5500 6650 5600
+Wire Wire Line
+	7400 5600 7400 5400
+$Comp
+L Device:R_Small_US R16
+U 1 1 5D4D33AB
+P 6650 5750
+F 0 "R16" H 6718 5796 50  0000 L CNN
+F 1 "1k8" H 6718 5705 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 6650 5750 50  0001 C CNN
+F 3 "~" H 6650 5750 50  0001 C CNN
+	1    6650 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C10
+U 1 1 5D4D39A8
+P 7400 5750
+F 0 "C10" H 7515 5796 50  0000 L CNN
+F 1 "10u" H 7515 5705 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 7438 5600 50  0001 C CNN
+F 3 "" H 7400 5750 50  0001 C CNN
+	1    7400 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 5600
+$Comp
+L 4ms-power:GND #PWR0115
+U 1 1 5D4D415F
+P 7400 5900
+F 0 "#PWR0115" H 7400 5650 50  0001 C CNN
+F 1 "GND" H 7405 5727 50  0000 C CNN
+F 2 "" H 7400 5900 50  0001 C CNN
+F 3 "" H 7400 5900 50  0001 C CNN
+	1    7400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0116
+U 1 1 5D4D46E6
+P 6650 5850
+F 0 "#PWR0116" H 6650 5600 50  0001 C CNN
+F 1 "GND" H 6655 5677 50  0000 C CNN
+F 2 "" H 6650 5850 50  0001 C CNN
+F 3 "" H 6650 5850 50  0001 C CNN
+	1    6650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5600 6650 5650
+Connection ~ 6650 5600
+$Comp
+L power:+9V #PWR0117
+U 1 1 5D4D6E1B
+P 6350 4700
+F 0 "#PWR0117" H 6350 4550 50  0001 C CNN
+F 1 "+9V" H 6365 4873 50  0000 C CNN
+F 2 "" H 6350 4700 50  0001 C CNN
+F 3 "" H 6350 4700 50  0001 C CNN
+	1    6350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0118
+U 1 1 5D4D72F9
+P 7000 4600
+F 0 "#PWR0118" H 7000 4450 50  0001 C CNN
+F 1 "+9V" H 7015 4773 50  0000 C CNN
+F 2 "" H 7000 4600 50  0001 C CNN
+F 3 "" H 7000 4600 50  0001 C CNN
+	1    7000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R17
+U 1 1 5D4D784D
+P 7800 4750
+F 0 "R17" H 7868 4796 50  0000 L CNN
+F 1 "100k" H 7868 4705 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 7800 4750 50  0001 C CNN
+F 3 "~" H 7800 4750 50  0001 C CNN
+	1    7800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R18
+U 1 1 5D4D8110
+P 7800 5600
+F 0 "R18" H 7868 5646 50  0000 L CNN
+F 1 "22k" H 7868 5555 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 7800 5600 50  0001 C CNN
+F 3 "~" H 7800 5600 50  0001 C CNN
+	1    7800 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5600 7400 5600
+Wire Wire Line
+	7700 5200 7800 5200
+Wire Wire Line
+	7800 5200 7800 4850
+Wire Wire Line
+	7800 5500 7800 5200
+Connection ~ 7800 5200
+Wire Wire Line
+	7800 5200 8050 5200
+Wire Wire Line
+	8050 5200 8050 6200
+$Comp
+L Device:Q_NPN_CBE Q4
+U 1 1 5D4CBC20
+P 6550 5300
+F 0 "Q4" H 6741 5346 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 6741 5255 50  0000 L CNN
+F 2 "bowicz-kicad-lib:TO-92" H 6750 5400 50  0001 C CNN
+F 3 "~" H 6550 5300 50  0001 C CNN
+	1    6550 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 6200 5950 5900
+Wire Wire Line
+	5950 6200 8050 6200
+$Comp
+L 4ms-power:GND #PWR0119
+U 1 1 5D4E4059
+P 7800 5700
+F 0 "#PWR0119" H 7800 5450 50  0001 C CNN
+F 1 "GND" H 7805 5527 50  0000 C CNN
+F 2 "" H 7800 5700 50  0001 C CNN
+F 3 "" H 7800 5700 50  0001 C CNN
+	1    7800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0120
+U 1 1 5D4E459A
+P 7800 4650
+F 0 "#PWR0120" H 7800 4500 50  0001 C CNN
+F 1 "+9V" H 7815 4823 50  0000 C CNN
+F 2 "" H 7800 4650 50  0001 C CNN
+F 3 "" H 7800 4650 50  0001 C CNN
+	1    7800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C11
+U 1 1 5D4E4B22
+P 8150 5000
+F 0 "C11" V 7898 5000 50  0000 C CNN
+F 1 "10u" V 7989 5000 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 8188 4850 50  0001 C CNN
+F 3 "" H 8150 5000 50  0001 C CNN
+	1    8150 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C12
+U 1 1 5D4E52FD
+P 8700 5000
+F 0 "C12" V 8448 5000 50  0000 C CNN
+F 1 "10u" V 8539 5000 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 8738 4850 50  0001 C CNN
+F 3 "" H 8700 5000 50  0001 C CNN
+	1    8700 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C13
+U 1 1 5D4E5B01
+P 9500 5000
+F 0 "C13" V 9248 5000 50  0000 C CNN
+F 1 "1n" V 9339 5000 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 9538 4850 50  0001 C CNN
+F 3 "" H 9500 5000 50  0001 C CNN
+	1    9500 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C14
+U 1 1 5D4E61EF
+P 9500 5850
+F 0 "C14" H 9385 5804 50  0000 R CNN
+F 1 "100n" H 9385 5895 50  0000 R CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 9538 5700 50  0001 C CNN
+F 3 "" H 9500 5850 50  0001 C CNN
+	1    9500 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 5000 7400 5000
+Connection ~ 7400 5000
+Wire Wire Line
+	8300 5000 8400 5000
+Wire Wire Line
+	8850 5000 8900 5000
+$Comp
+L Device:R_Small_US R22
+U 1 1 5D4EB86E
+P 9250 5250
+F 0 "R22" H 9182 5204 50  0000 R CNN
+F 1 "22k" H 9182 5295 50  0000 R CNN
+F 2 "bowicz-kicad-lib:Resistor" H 9250 5250 50  0001 C CNN
+F 3 "~" H 9250 5250 50  0001 C CNN
+	1    9250 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R23
+U 1 1 5D4EC4F0
+P 9750 5250
+F 0 "R23" H 9818 5296 50  0000 L CNN
+F 1 "10k" H 9818 5205 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 9750 5250 50  0001 C CNN
+F 3 "~" H 9750 5250 50  0001 C CNN
+	1    9750 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R20
+U 1 1 5D4ECC47
+P 8900 5400
+F 0 "R20" H 8968 5446 50  0000 L CNN
+F 1 "47k" H 8968 5355 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 8900 5400 50  0001 C CNN
+F 3 "~" H 8900 5400 50  0001 C CNN
+	1    8900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R21
+U 1 1 5D4ED4C4
+P 8900 6200
+F 0 "R21" H 8968 6246 50  0000 L CNN
+F 1 "10k" H 8968 6155 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 8900 6200 50  0001 C CNN
+F 3 "~" H 8900 6200 50  0001 C CNN
+	1    8900 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0121
+U 1 1 5D4EE84D
+P 9500 6000
+F 0 "#PWR0121" H 9500 5750 50  0001 C CNN
+F 1 "GND" H 9505 5827 50  0000 C CNN
+F 2 "" H 9500 6000 50  0001 C CNN
+F 3 "" H 9500 6000 50  0001 C CNN
+	1    9500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0122
+U 1 1 5D4EEDFF
+P 8900 6300
+F 0 "#PWR0122" H 8900 6050 50  0001 C CNN
+F 1 "GND" H 8905 6127 50  0000 C CNN
+F 2 "" H 8900 6300 50  0001 C CNN
+F 3 "" H 8900 6300 50  0001 C CNN
+	1    8900 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5300 8900 5000
+Connection ~ 8900 5000
+Wire Wire Line
+	8900 5000 9250 5000
+Wire Wire Line
+	8900 5500 8900 5950
+Wire Wire Line
+	9750 5350 9750 5550
+Wire Wire Line
+	9750 5550 9500 5550
+Wire Wire Line
+	9500 5550 9500 5700
+Wire Wire Line
+	9500 5550 9250 5550
+Wire Wire Line
+	9250 5550 9250 5350
+Connection ~ 9500 5550
+Wire Wire Line
+	9250 5150 9250 5000
+Connection ~ 9250 5000
+Wire Wire Line
+	9250 5000 9350 5000
+Wire Wire Line
+	9650 5000 9750 5000
+Wire Wire Line
+	9750 5000 9750 5150
+$Comp
+L 4ms-passives:DIODE_TH D2
+U 1 1 5D4FABF0
+P 8300 5250
+F 0 "D2" V 8254 5329 50  0000 L CNN
+F 1 "DIODE_TH" V 8345 5329 50  0000 L CNN
+F 2 "4ms-footprints:Diode_BAT-85S_TH" H 8200 5250 50  0001 C CNN
+F 3 "" H 8300 5250 50  0001 C CNN
+	1    8300 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:DIODE_TH D3
+U 1 1 5D4FBAF5
+P 8500 5450
+F 0 "D3" V 8546 5371 50  0000 R CNN
+F 1 "DIODE_TH" V 8455 5371 50  0000 R CNN
+F 2 "4ms-footprints:Diode_BAT-85S_TH" H 8400 5450 50  0001 C CNN
+F 3 "" H 8500 5450 50  0001 C CNN
+	1    8500 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8500 5600 8500 5650
+Wire Wire Line
+	8500 5650 8400 5650
+Wire Wire Line
+	8300 5650 8300 5400
+Wire Wire Line
+	8500 5100 8500 5300
+Wire Wire Line
+	8300 5100 8400 5100
+Wire Wire Line
+	8400 5100 8400 5000
+Connection ~ 8400 5100
+Wire Wire Line
+	8400 5100 8500 5100
+Connection ~ 8400 5000
+Wire Wire Line
+	8400 5000 8550 5000
+$Comp
+L 4ms-power:GND #PWR0123
+U 1 1 5D503783
+P 8400 5650
+F 0 "#PWR0123" H 8400 5400 50  0001 C CNN
+F 1 "GND" H 8405 5477 50  0000 C CNN
+F 2 "" H 8400 5650 50  0001 C CNN
+F 3 "" H 8400 5650 50  0001 C CNN
+	1    8400 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 5650
+Wire Wire Line
+	8400 5650 8300 5650
+Wire Wire Line
+	4150 3800 4150 4900
+$Comp
+L 4ms-mech:SWITCH_INV SW1
+U 1 1 5D53A6DA
+P 10550 5100
+F 0 "SW1" H 10550 5425 50  0000 C CNN
+F 1 "Tone" H 10550 5334 50  0000 C CNN
+F 2 "4ms_Switch:Switch_Toggle_SPST_SubMini" H 10550 5100 50  0001 C CNN
+F 3 "" H 10550 5100 50  0000 C CNN
+	1    10550 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5950 10050 5950
+Wire Wire Line
+	10050 5950 10050 5200
+Connection ~ 8900 5950
+Wire Wire Line
+	8900 5950 8900 6100
+Wire Wire Line
+	10050 5000 9750 5000
+Connection ~ 9750 5000
+$Comp
+L Device:R_POT_US Balance1
+U 1 1 5D5433E6
+P 7950 3500
+F 0 "Balance1" H 7883 3454 50  0000 R CNN
+F 1 "50kB" H 7883 3545 50  0000 R CNN
+F 2 "bowicz-kicad-lib:Pot_16mm" H 7950 3500 50  0001 C CNN
+F 3 "~" H 7950 3500 50  0001 C CNN
+	1    7950 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0124
+U 1 1 5D54661B
+P 7950 3650
+F 0 "#PWR0124" H 7950 3400 50  0001 C CNN
+F 1 "GND" H 7955 3477 50  0000 C CNN
+F 2 "" H 7950 3650 50  0001 C CNN
+F 3 "" H 7950 3650 50  0001 C CNN
+	1    7950 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3350 7950 3250
+Wire Wire Line
+	7950 3250 7500 3250
+Wire Wire Line
+	7500 3250 7500 4350
+Wire Wire Line
+	7500 4350 11050 4350
+Wire Wire Line
+	11050 4350 11050 5100
+$Comp
+L 4ms-passives:CAP_TH C15
+U 1 1 5D54A1AD
+P 8400 3500
+F 0 "C15" V 8148 3500 50  0000 C CNN
+F 1 "10u" V 8239 3500 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 8438 3350 50  0001 C CNN
+F 3 "" H 8400 3500 50  0001 C CNN
+	1    8400 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 3500 8100 3500
+$Comp
+L Device:Q_NPN_CBE Q6
+U 1 1 5D54EDB3
+P 9050 3500
+F 0 "Q6" H 9241 3546 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 9241 3455 50  0000 L CNN
+F 2 "bowicz-kicad-lib:TO-92" H 9250 3600 50  0001 C CNN
+F 3 "~" H 9050 3500 50  0001 C CNN
+	1    9050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R25
+U 1 1 5D54FA53
+P 8700 3750
+F 0 "R25" H 8768 3796 50  0000 L CNN
+F 1 "15k" H 8768 3705 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 8700 3750 50  0001 C CNN
+F 3 "~" H 8700 3750 50  0001 C CNN
+	1    8700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R24
+U 1 1 5D55017C
+P 8700 3150
+F 0 "R24" H 8768 3196 50  0000 L CNN
+F 1 "100k" H 8768 3105 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 8700 3150 50  0001 C CNN
+F 3 "~" H 8700 3150 50  0001 C CNN
+	1    8700 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3500 8700 3500
+Wire Wire Line
+	8700 3500 8700 3250
+Connection ~ 8700 3500
+Wire Wire Line
+	8700 3500 8550 3500
+Wire Wire Line
+	8700 3500 8700 3650
+$Comp
+L 4ms-power:GND #PWR0125
+U 1 1 5D55A611
+P 8700 3850
+F 0 "#PWR0125" H 8700 3600 50  0001 C CNN
+F 1 "GND" H 8705 3677 50  0000 C CNN
+F 2 "" H 8700 3850 50  0001 C CNN
+F 3 "" H 8700 3850 50  0001 C CNN
+	1    8700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0126
+U 1 1 5D55ACD2
+P 8700 3050
+F 0 "#PWR0126" H 8700 2900 50  0001 C CNN
+F 1 "+9V" H 8715 3223 50  0000 C CNN
+F 2 "" H 8700 3050 50  0001 C CNN
+F 3 "" H 8700 3050 50  0001 C CNN
+	1    8700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R26
+U 1 1 5D55B5AA
+P 9150 3050
+F 0 "R26" H 9218 3096 50  0000 L CNN
+F 1 "10k" H 9218 3005 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 9150 3050 50  0001 C CNN
+F 3 "~" H 9150 3050 50  0001 C CNN
+	1    9150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R27
+U 1 1 5D55C11E
+P 9150 3900
+F 0 "R27" H 9218 3946 50  0000 L CNN
+F 1 "1k" H 9218 3855 50  0000 L CNN
+F 2 "bowicz-kicad-lib:Resistor" H 9150 3900 50  0001 C CNN
+F 3 "~" H 9150 3900 50  0001 C CNN
+	1    9150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3800 9150 3700
+Wire Wire Line
+	9150 3300 9150 3200
+$Comp
+L power:+9V #PWR0127
+U 1 1 5D5633E3
+P 9150 2950
+F 0 "#PWR0127" H 9150 2800 50  0001 C CNN
+F 1 "+9V" H 9165 3123 50  0000 C CNN
+F 2 "" H 9150 2950 50  0001 C CNN
+F 3 "" H 9150 2950 50  0001 C CNN
+	1    9150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0128
+U 1 1 5D563B6A
+P 9150 4000
+F 0 "#PWR0128" H 9150 3750 50  0001 C CNN
+F 1 "GND" H 9155 3827 50  0000 C CNN
+F 2 "" H 9150 4000 50  0001 C CNN
+F 3 "" H 9150 4000 50  0001 C CNN
+	1    9150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C16
+U 1 1 5D56430C
+P 9550 3200
+F 0 "C16" V 9298 3200 50  0000 C CNN
+F 1 "10u" V 9389 3200 50  0000 C CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 9588 3050 50  0001 C CNN
+F 3 "" H 9550 3200 50  0001 C CNN
+	1    9550 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 3200 9150 3200
+Connection ~ 9150 3200
+Wire Wire Line
+	9150 3200 9150 3150
+$Comp
+L Device:R_Small_US R28
+U 1 1 5D5687FA
+P 9850 3450
+F 0 "R28" H 9782 3404 50  0000 R CNN
+F 1 "100k" H 9782 3495 50  0000 R CNN
+F 2 "bowicz-kicad-lib:Resistor" H 9850 3450 50  0001 C CNN
+F 3 "~" H 9850 3450 50  0001 C CNN
+	1    9850 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 3200 9850 3200
+Wire Wire Line
+	9850 3200 9850 3350
+$Comp
+L 4ms-power:GND #PWR0129
+U 1 1 5D56D3C0
+P 9850 3650
+F 0 "#PWR0129" H 9850 3400 50  0001 C CNN
+F 1 "GND" H 9855 3477 50  0000 C CNN
+F 2 "" H 9850 3650 50  0001 C CNN
+F 3 "" H 9850 3650 50  0001 C CNN
+	1    9850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3650 9850 3550
+Wire Wire Line
+	10000 3200 9850 3200
+Connection ~ 9850 3200
+$Comp
+L 4ms-power:GND #PWR0130
+U 1 1 5D57967D
+P 2950 5500
+F 0 "#PWR0130" H 2950 5250 50  0001 C CNN
+F 1 "GND" H 2955 5327 50  0000 C CNN
+F 2 "" H 2950 5500 50  0001 C CNN
+F 3 "" H 2950 5500 50  0001 C CNN
+	1    2950 5500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

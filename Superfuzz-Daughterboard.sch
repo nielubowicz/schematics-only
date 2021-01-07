@@ -1,0 +1,651 @@
+EESchema Schematic File Version 4
+LIBS:Superfuzz-Daughterboard-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4ms-passives:R R1
+U 1 1 5F436535
+P 1150 3500
+F 0 "R1" V 943 3500 50  0000 C CNN
+F 1 "10K" V 1034 3500 50  0000 C CNN
+F 2 "bowicz:Resistor" V 1080 3500 50  0001 C CNN
+F 3 "" H 1150 3500 50  0001 C CNN
+	1    1150 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:2N3904_TH Q1
+U 1 1 5F436F19
+P 1650 3500
+F 0 "Q1" H 1840 3500 50  0000 L CNN
+F 1 "2N4123" H 1840 3455 50  0001 L CNN
+F 2 "bowicz:TO-92" H 1850 3425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1650 3500 50  0001 L CNN
+	1    1650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:R R4
+U 1 1 5F4391AA
+P 1750 3050
+F 0 "R4" H 1820 3096 50  0000 L CNN
+F 1 "10K" H 1820 3005 50  0000 L CNN
+F 2 "bowicz:Resistor" V 1680 3050 50  0001 C CNN
+F 3 "" H 1750 3050 50  0001 C CNN
+	1    1750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:R R2
+U 1 1 5F4397B5
+P 1400 3050
+F 0 "R2" H 1470 3096 50  0000 L CNN
+F 1 "220K" H 1470 3005 50  0000 L CNN
+F 2 "bowicz:Resistor" V 1330 3050 50  0001 C CNN
+F 3 "" H 1400 3050 50  0001 C CNN
+	1    1400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:R R3
+U 1 1 5F439C7A
+P 1400 3950
+F 0 "R3" H 1470 3996 50  0000 L CNN
+F 1 "150K" H 1470 3905 50  0000 L CNN
+F 2 "bowicz:Resistor" V 1330 3950 50  0001 C CNN
+F 3 "" H 1400 3950 50  0001 C CNN
+	1    1400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3500 1400 3500
+Wire Wire Line
+	1400 3800 1400 3500
+Connection ~ 1400 3500
+Wire Wire Line
+	1400 3500 1300 3500
+Wire Wire Line
+	1400 3500 1400 3200
+Wire Wire Line
+	1750 3800 1750 3750
+Wire Wire Line
+	1750 3300 1750 3250
+$Comp
+L Device:CP C1
+U 1 1 5F43BA46
+P 2200 3250
+F 0 "C1" V 2455 3250 50  0000 C CNN
+F 1 "10uF" V 2364 3250 50  0000 C CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 2238 3100 50  0001 C CNN
+F 3 "~" H 2200 3250 50  0001 C CNN
+	1    2200 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 3750 1750 3750
+Connection ~ 1750 3750
+Wire Wire Line
+	1750 3750 1750 3700
+Wire Wire Line
+	2050 3250 1750 3250
+Connection ~ 1750 3250
+Wire Wire Line
+	1750 3250 1750 3200
+$Comp
+L 4ms-passives:R R5
+U 1 1 5F438B0C
+P 1750 3950
+F 0 "R5" H 1820 3996 50  0000 L CNN
+F 1 "10K" H 1820 3905 50  0000 L CNN
+F 2 "bowicz:Resistor" V 1680 3950 50  0001 C CNN
+F 3 "" H 1750 3950 50  0001 C CNN
+	1    1750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:R R6
+U 1 1 5F44E3BD
+P 2600 3250
+F 0 "R6" V 2393 3250 50  0000 C CNN
+F 1 "470" V 2484 3250 50  0000 C CNN
+F 2 "bowicz:Resistor" V 2530 3250 50  0001 C CNN
+F 3 "" H 2600 3250 50  0001 C CNN
+	1    2600 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3250 2350 3250
+$Comp
+L 4ms-passives:2N3904_TH Q2
+U 1 1 5F44EE66
+P 3050 3500
+F 0 "Q2" H 3240 3500 50  0000 L CNN
+F 1 "2N4123" H 3240 3455 50  0001 L CNN
+F 2 "bowicz:TO-92" H 3250 3425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3050 3500 50  0001 L CNN
+	1    3050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3250 2750 3250
+$Comp
+L 4ms-passives:R R7
+U 1 1 5F4526E0
+P 2850 3050
+F 0 "R7" H 2920 3096 50  0000 L CNN
+F 1 "100K" H 2920 3005 50  0000 L CNN
+F 2 "bowicz:Resistor" V 2780 3050 50  0001 C CNN
+F 3 "" H 2850 3050 50  0001 C CNN
+	1    2850 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:R R8
+U 1 1 5F45343F
+P 2850 3750
+F 0 "R8" H 2920 3796 50  0000 L CNN
+F 1 "22K" H 2920 3705 50  0000 L CNN
+F 2 "bowicz:Resistor" V 2780 3750 50  0001 C CNN
+F 3 "" H 2850 3750 50  0001 C CNN
+	1    2850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3250 2850 3200
+Wire Wire Line
+	2850 3250 2850 3500
+Connection ~ 2850 3250
+Wire Wire Line
+	2850 3600 2850 3500
+Connection ~ 2850 3500
+Wire Wire Line
+	3150 3750 3150 3700
+$Comp
+L 4ms-passives:2N3904_TH Q3
+U 1 1 5F45A1F7
+P 3650 3500
+F 0 "Q3" H 3841 3500 50  0000 L CNN
+F 1 "2N4123" H 3841 3455 50  0001 L CNN
+F 2 "bowicz:TO-92" H 3850 3425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3650 3500 50  0001 L CNN
+	1    3650 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4ms-mech:TRIMPOT RV1
+U 1 1 5F45FD5C
+P 3350 3050
+F 0 "RV1" H 3280 3050 50  0000 R CNN
+F 1 "20K" H 3280 3005 50  0001 R CNN
+F 2 "4ms-footprints:Trim_Round_Black_Small" H 3550 2800 50  0001 C CNN
+F 3 "" H 3350 3050 50  0001 C CNN
+	1    3350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3050 3500 2900
+Wire Wire Line
+	3500 2900 3350 2900
+$Comp
+L 4ms-passives:R R9
+U 1 1 5F461C18
+P 3350 2700
+F 0 "R9" H 3420 2746 50  0000 L CNN
+F 1 "1K" H 3420 2655 50  0000 L CNN
+F 2 "bowicz:Resistor" V 3280 2700 50  0001 C CNN
+F 3 "" H 3350 2700 50  0001 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2900 3350 2850
+Connection ~ 3350 2900
+Wire Wire Line
+	3350 3200 3150 3200
+Wire Wire Line
+	3150 3200 3150 3300
+Wire Wire Line
+	3350 3200 3550 3200
+Wire Wire Line
+	3550 3200 3550 3300
+Connection ~ 3350 3200
+Connection ~ 3850 3500
+$Comp
+L Device:CP C3
+U 1 1 5F463E76
+P 3550 3900
+F 0 "C3" H 3668 3946 50  0000 L CNN
+F 1 "10uF" H 3668 3855 50  0000 L CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 3588 3750 50  0001 C CNN
+F 3 "~" H 3550 3900 50  0001 C CNN
+	1    3550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3750 3550 3700
+Wire Wire Line
+	3550 3700 3150 3700
+Connection ~ 3550 3700
+Connection ~ 3150 3700
+Connection ~ 3550 3200
+$Comp
+L 4ms-passives:R R13
+U 1 1 5F458F6B
+P 3150 3900
+F 0 "R13" H 3220 3946 50  0000 L CNN
+F 1 "1.8K" H 3220 3855 50  0000 L CNN
+F 2 "bowicz:Resistor" V 3080 3900 50  0001 C CNN
+F 3 "" H 3150 3900 50  0001 C CNN
+	1    3150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0101
+U 1 1 5F478819
+P 3350 2500
+F 0 "#PWR0101" H 3350 2350 50  0001 C CNN
+F 1 "+9V" H 3365 2673 50  0000 C CNN
+F 2 "" H 3350 2500 50  0001 C CNN
+F 3 "" H 3350 2500 50  0001 C CNN
+	1    3350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2550 3350 2500
+Wire Wire Line
+	1400 2900 1400 2800
+Wire Wire Line
+	1750 2900 1750 2800
+Wire Wire Line
+	2850 2900 2850 2800
+Wire Wire Line
+	3550 4100 3550 4050
+Wire Wire Line
+	3150 4100 3150 4050
+Wire Wire Line
+	1400 2800 1750 2800
+Wire Wire Line
+	2850 2800 2850 2500
+Connection ~ 2850 2800
+Connection ~ 1750 2800
+Wire Wire Line
+	1750 2800 2850 2800
+Wire Wire Line
+	3350 2500 2850 2500
+Connection ~ 3350 2500
+Wire Wire Line
+	3850 2500 3350 2500
+$Comp
+L 4ms-mech:POT SCOOP1
+U 1 1 5F45CDB7
+P 3150 1600
+F 0 "SCOOP1" H 3080 1646 50  0000 R CNN
+F 1 "10KA" H 3080 1555 50  0000 R CNN
+F 2 "bowicz:Pot_16mm" H 3350 1350 50  0001 C CNN
+F 3 "" H 3150 1600 50  0001 C CNN
+	1    3150 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F865334
+P 2850 3900
+F 0 "#PWR0102" H 2850 3650 50  0001 C CNN
+F 1 "GND" H 2855 3727 50  0000 C CNN
+F 2 "" H 2850 3900 50  0001 C CNN
+F 3 "" H 2850 3900 50  0001 C CNN
+	1    2850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J6
+U 1 1 5F871F6A
+P 800 3500
+F 0 "J6" H 718 3275 50  0000 C CNN
+F 1 "In" H 718 3366 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 800 3500 50  0001 C CNN
+F 3 "" H 800 3500 50  0001 C CNN
+	1    800  3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J3
+U 1 1 5F872895
+P 3500 1600
+F 0 "J3" H 3580 1642 50  0000 L CNN
+F 1 "Out" H 3580 1551 50  0000 L CNN
+F 2 "bowicz:SmallWireHole" H 3500 1600 50  0001 C CNN
+F 3 "" H 3500 1600 50  0001 C CNN
+	1    3500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J4
+U 1 1 5F872D99
+P 3150 1950
+F 0 "J4" V 3022 2030 50  0000 L CNN
+F 1 "Out" V 3113 2030 50  0000 L CNN
+F 2 "bowicz:SmallWireHole" H 3150 1950 50  0001 C CNN
+F 3 "" H 3150 1950 50  0001 C CNN
+	1    3150 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J2
+U 1 1 5F873450
+P 2800 1600
+F 0 "J2" H 2718 1375 50  0000 C CNN
+F 1 "Out" H 2718 1466 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 2800 1600 50  0001 C CNN
+F 3 "" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J1
+U 1 1 5F876881
+P 950 1600
+F 0 "J1" H 868 1375 50  0000 C CNN
+F 1 "9V" H 868 1466 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 950 1600 50  0001 C CNN
+F 3 "" H 950 1600 50  0001 C CNN
+	1    950  1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J5
+U 1 1 5F876F80
+P 950 2150
+F 0 "J5" H 868 1925 50  0000 C CNN
+F 1 "Gnd" H 868 2016 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 950 2150 50  0001 C CNN
+F 3 "" H 950 2150 50  0001 C CNN
+	1    950  2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+9V #PWR0103
+U 1 1 5F87A220
+P 1200 1600
+F 0 "#PWR0103" H 1200 1450 50  0001 C CNN
+F 1 "+9V" H 1215 1773 50  0000 C CNN
+F 2 "" H 1200 1600 50  0001 C CNN
+F 3 "" H 1200 1600 50  0001 C CNN
+	1    1200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:PWR_FLAG #FLG0101
+U 1 1 5F87AC9F
+P 1250 1600
+F 0 "#FLG0101" H 1250 1675 50  0001 C CNN
+F 1 "PWR_FLAG" V 1250 1728 50  0000 L CNN
+F 2 "" H 1250 1600 50  0001 C CNN
+F 3 "" H 1250 1600 50  0001 C CNN
+	1    1250 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 3500 3850 3600
+Wire Wire Line
+	3850 3500 4050 3500
+$Comp
+L power:GND #PWR0104
+U 1 1 5F8659FC
+P 3850 3900
+F 0 "#PWR0104" H 3850 3650 50  0001 C CNN
+F 1 "GND" H 3855 3727 50  0000 C CNN
+F 2 "" H 3850 3900 50  0001 C CNN
+F 3 "" H 3850 3900 50  0001 C CNN
+	1    3850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:R R12
+U 1 1 5F45D00E
+P 3850 3750
+F 0 "R12" H 3920 3796 50  0000 L CNN
+F 1 "22K" H 3920 3705 50  0000 L CNN
+F 2 "bowicz:Resistor" V 3780 3750 50  0001 C CNN
+F 3 "" H 3850 3750 50  0001 C CNN
+	1    3850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3700 4150 3700
+Wire Wire Line
+	4050 3500 4050 3700
+Connection ~ 1750 4100
+Wire Wire Line
+	1400 4100 1750 4100
+Wire Wire Line
+	3150 4100 3550 4100
+Connection ~ 3150 4100
+Connection ~ 3550 4100
+Wire Wire Line
+	3550 4100 4600 4100
+$Comp
+L 4ms-passives:R R10
+U 1 1 5F45D744
+P 3850 3050
+F 0 "R10" H 3920 3096 50  0000 L CNN
+F 1 "100K" H 3920 3005 50  0000 L CNN
+F 2 "bowicz:Resistor" V 3780 3050 50  0001 C CNN
+F 3 "" H 3850 3050 50  0001 C CNN
+	1    3850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2500 3850 2900
+Wire Wire Line
+	3850 3500 3850 3200
+Wire Wire Line
+	4200 3500 4100 3500
+Wire Wire Line
+	3550 3200 4100 3200
+Wire Wire Line
+	4100 3200 4100 3500
+$Comp
+L 4ms-headers:Conn_01x01 J7
+U 1 1 5F8715F6
+P 5900 3500
+F 0 "J7" H 5980 3542 50  0000 L CNN
+F 1 "Out" H 5980 3451 50  0000 L CNN
+F 2 "bowicz:SmallWireHole" H 5900 3500 50  0001 C CNN
+F 3 "" H 5900 3500 50  0001 C CNN
+	1    5900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3900 4600 4100
+Connection ~ 4600 3900
+Wire Wire Line
+	4600 3900 4850 3900
+Wire Wire Line
+	4600 3800 4600 3900
+Wire Wire Line
+	4850 3800 4850 3900
+Wire Wire Line
+	5400 3500 5300 3500
+$Comp
+L 4ms-passives:R R14
+U 1 1 5F472A65
+P 5550 3500
+F 0 "R14" V 5343 3500 50  0000 C CNN
+F 1 "10k" V 5434 3500 50  0000 C CNN
+F 2 "bowicz:Resistor" V 5480 3500 50  0001 C CNN
+F 3 "" H 5550 3500 50  0001 C CNN
+	1    5550 3500
+	0    1    1    0   
+$EndComp
+Connection ~ 4850 3500
+Wire Wire Line
+	5000 3500 4850 3500
+$Comp
+L Device:CP C5
+U 1 1 5F470EF0
+P 5150 3500
+F 0 "C5" V 5405 3500 50  0000 C CNN
+F 1 "10uF" V 5314 3500 50  0000 C CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 5188 3350 50  0001 C CNN
+F 3 "~" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	0    1    -1   0   
+$EndComp
+Connection ~ 4600 3500
+Wire Wire Line
+	4600 3500 4850 3500
+Wire Wire Line
+	4600 3500 4500 3500
+$Comp
+L 4ms-passives:D D1
+U 1 1 5F46B387
+P 4600 3650
+F 0 "D1" V 4646 3571 50  0000 R CNN
+F 1 "Ge" V 4555 3571 50  0000 R CNN
+F 2 "bowicz:Diode" H 4600 3650 50  0001 C CNN
+F 3 "" H 4600 3650 50  0001 C CNN
+	1    4600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4ms-passives:D D2
+U 1 1 5F4693A8
+P 4850 3650
+F 0 "D2" V 4804 3729 50  0000 L CNN
+F 1 "Ge" V 4895 3729 50  0000 L CNN
+F 2 "bowicz:Diode" H 4850 3650 50  0001 C CNN
+F 3 "" H 4850 3650 50  0001 C CNN
+	1    4850 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5F46758B
+P 4350 3500
+F 0 "C4" V 4605 3500 50  0000 C CNN
+F 1 "10uF" V 4514 3500 50  0000 C CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 4388 3350 50  0001 C CNN
+F 3 "~" H 4350 3500 50  0001 C CNN
+	1    4350 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 3700 2050 3750
+$Comp
+L Device:CP C2
+U 1 1 5F43C6E6
+P 2200 3700
+F 0 "C2" V 2455 3700 50  0000 C CNN
+F 1 "10uF" V 2364 3700 50  0000 C CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 2238 3550 50  0001 C CNN
+F 3 "~" H 2200 3700 50  0001 C CNN
+	1    2200 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2400 3700 2400 3800
+Wire Wire Line
+	2350 3700 2400 3700
+Wire Wire Line
+	2400 3745 2350 3745
+Wire Wire Line
+	2685 4100 3150 4100
+Connection ~ 2685 4100
+Wire Wire Line
+	2685 3705 2685 4100
+Wire Wire Line
+	2600 3705 2685 3705
+Wire Wire Line
+	2600 3705 2600 3800
+Wire Wire Line
+	2600 3705 2600 3700
+Connection ~ 2600 3705
+$Comp
+L power:GND #PWR0105
+U 1 1 5F48FFC1
+P 2600 3700
+F 0 "#PWR0105" H 2600 3450 50  0001 C CNN
+F 1 "GND" H 2605 3527 50  0000 C CNN
+F 2 "" H 2600 3700 50  0001 C CNN
+F 3 "" H 2600 3700 50  0001 C CNN
+	1    2600 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 4100 2685 4100
+Wire Wire Line
+	2500 4200 2500 4550
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5F86640B
+P 2500 4000
+F 0 "SW1" V 2546 3812 50  0000 R CNN
+F 1 "SW_SPDT" V 2455 3812 50  0000 R CNN
+F 2 "4ms_Switch:Switch_Toggle_SPDT_Mini_SolderLug" H 2500 4000 50  0001 C CNN
+F 3 "~" H 2500 4000 50  0001 C CNN
+	1    2500 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 1600 1200 1600
+Wire Wire Line
+	1200 1600 1150 1600
+Connection ~ 1200 1600
+$Comp
+L power:GND #PWR0106
+U 1 1 5F87C59E
+P 1200 2150
+F 0 "#PWR0106" H 1200 1900 50  0001 C CNN
+F 1 "GND" H 1205 1977 50  0000 C CNN
+F 2 "" H 1200 2150 50  0001 C CNN
+F 3 "" H 1200 2150 50  0001 C CNN
+	1    1200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:PWR_FLAG #FLG0102
+U 1 1 5F87CC04
+P 1250 2150
+F 0 "#FLG0102" H 1250 2225 50  0001 C CNN
+F 1 "PWR_FLAG" V 1250 2278 50  0000 L CNN
+F 2 "" H 1250 2150 50  0001 C CNN
+F 3 "" H 1250 2150 50  0001 C CNN
+	1    1250 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 2150 1200 2150
+Wire Wire Line
+	1200 2150 1150 2150
+Connection ~ 1200 2150
+Wire Wire Line
+	4150 3700 4150 4550
+Wire Wire Line
+	3150 4550 4150 4550
+$Comp
+L 4ms-passives:R R11
+U 1 1 5F446678
+P 3000 4550
+F 0 "R11" V 2793 4550 50  0000 C CNN
+F 1 "470" V 2884 4550 50  0000 C CNN
+F 2 "bowicz:Resistor" V 2930 4550 50  0001 C CNN
+F 3 "" H 3000 4550 50  0001 C CNN
+	1    3000 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4550 2500 4550
+$EndSCHEMATC

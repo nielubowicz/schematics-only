@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 3pdt-board-rescue:SW_DPDT_x3-Switch SW1
+U 1 1 5E54B52A
+P 4900 2950
+F 0 "SW1" H 4900 3235 50  0000 C CNN
+F 1 "SW_DPDT_x3" H 4900 3144 50  0000 C CNN
+F 2 "bowicz:StompSwitch_3pdt" H 4900 2950 50  0001 C CNN
+F 3 "" H 4900 2950 50  0001 C CNN
+	1    4900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3pdt-board-rescue:SW_DPDT_x3-Switch SW1
+U 3 1 5E54BAD7
+P 4900 3550
+F 0 "SW1" H 4900 3835 50  0000 C CNN
+F 1 "SW_DPDT_x3" H 4900 3744 50  0000 C CNN
+F 2 "bowicz:StompSwitch_3pdt" H 4900 3550 50  0001 C CNN
+F 3 "" H 4900 3550 50  0001 C CNN
+	3    4900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3pdt-board-rescue:SW_DPDT_x3-Switch SW1
+U 2 1 5E54C2B2
+P 4900 4150
+F 0 "SW1" H 4900 4435 50  0000 C CNN
+F 1 "SW_DPDT_x3" H 4900 4344 50  0000 C CNN
+F 2 "bowicz:StompSwitch_3pdt" H 4900 4150 50  0001 C CNN
+F 3 "" H 4900 4150 50  0001 C CNN
+	2    4900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J4
+U 1 1 5E54D171
+P 4350 4150
+F 0 "J4" H 4268 3925 50  0000 C CNN
+F 1 "SW" H 4268 4016 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 4350 4150 50  0001 C CNN
+F 3 "" H 4350 4150 50  0001 C CNN
+	1    4350 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0101
+U 1 1 5E54D8CA
+P 5200 4050
+F 0 "#PWR0101" H 5200 3800 50  0001 C CNN
+F 1 "GND" V 5205 3922 50  0000 R CNN
+F 2 "" H 5200 4050 50  0001 C CNN
+F 3 "" H 5200 4050 50  0001 C CNN
+	1    5200 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J2
+U 1 1 5E54E0C9
+P 5500 2850
+F 0 "J2" H 5580 2892 50  0000 L CNN
+F 1 "PI" H 5580 2801 50  0000 L CNN
+F 2 "bowicz:SmallWireHole" H 5500 2850 50  0001 C CNN
+F 3 "" H 5500 2850 50  0001 C CNN
+	1    5500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J1
+U 1 1 5E54E434
+P 4350 2950
+F 0 "J1" H 4268 2725 50  0000 C CNN
+F 1 "In" H 4268 2816 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 4350 2950 50  0001 C CNN
+F 3 "" H 4350 2950 50  0001 C CNN
+	1    4350 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2950 4700 2950
+$Comp
+L 4ms-headers:Conn_01x01 J5
+U 1 1 5E54FC58
+P 4350 3550
+F 0 "J5" H 4268 3325 50  0000 C CNN
+F 1 "PO" H 4268 3416 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 4350 3550 50  0001 C CNN
+F 3 "" H 4350 3550 50  0001 C CNN
+	1    4350 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 3550 4550 3550
+Wire Wire Line
+	4550 4150 4700 4150
+Wire Wire Line
+	5200 4050 5100 4050
+Wire Wire Line
+	5300 2850 5100 2850
+Wire Wire Line
+	5100 3050 5250 3050
+Wire Wire Line
+	5250 3050 5250 3450
+Wire Wire Line
+	5250 3450 5100 3450
+$Comp
+L 4ms-headers:Conn_01x01 J6
+U 1 1 5E550C94
+P 5500 3450
+F 0 "J6" H 5580 3492 50  0000 L CNN
+F 1 "Out" H 5580 3401 50  0000 L CNN
+F 2 "bowicz:SmallWireHole" H 5500 3450 50  0001 C CNN
+F 3 "" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3450 5250 3450
+Connection ~ 5250 3450
+$Comp
+L 4ms-power:GND #PWR0102
+U 1 1 5E5516A7
+P 5200 3650
+F 0 "#PWR0102" H 5200 3400 50  0001 C CNN
+F 1 "GND" V 5205 3522 50  0000 R CNN
+F 2 "" H 5200 3650 50  0001 C CNN
+F 3 "" H 5200 3650 50  0001 C CNN
+	1    5200 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3650 5100 3650
+$Comp
+L 4ms-headers:Conn_01x01 J3
+U 1 1 5E55239B
+P 4350 2250
+F 0 "J3" H 4268 2025 50  0000 C CNN
+F 1 "GND" H 4268 2116 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 4350 2250 50  0001 C CNN
+F 3 "" H 4350 2250 50  0001 C CNN
+	1    4350 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0103
+U 1 1 5E552ED3
+P 4750 2250
+F 0 "#PWR0103" H 4750 2000 50  0001 C CNN
+F 1 "GND" V 4755 2122 50  0000 R CNN
+F 2 "" H 4750 2250 50  0001 C CNN
+F 3 "" H 4750 2250 50  0001 C CNN
+	1    4750 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 2250 4700 2250
+$Comp
+L 4ms-power:PWR_FLAG #FLG0101
+U 1 1 5E5547FB
+P 4700 2250
+F 0 "#FLG0101" H 4700 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4700 2423 50  0000 C CNN
+F 2 "" H 4700 2250 50  0001 C CNN
+F 3 "" H 4700 2250 50  0001 C CNN
+	1    4700 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 2250
+Wire Wire Line
+	4700 2250 4550 2250
+NoConn ~ 5100 4250
+$EndSCHEMATC

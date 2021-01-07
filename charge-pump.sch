@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+LIBS:charge-pump-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4ms-headers:Conn_01x01 J1
+U 1 1 5D6BCF04
+P 5550 1800
+F 0 "J1" H 5468 1575 50  0000 C CNN
+F 1 "9V" H 5468 1666 50  0000 C CNN
+F 2 "bowicz:WireHole" H 5550 1800 50  0001 C CNN
+F 3 "" H 5550 1800 50  0001 C CNN
+	1    5550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J2
+U 1 1 5D6BD8B3
+P 3750 2600
+F 0 "J2" H 3668 2375 50  0000 C CNN
+F 1 "GND" H 3668 2466 50  0000 C CNN
+F 2 "bowicz:WireHole" H 3750 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0001 C CNN
+	1    3750 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J3
+U 1 1 5D6BDAAA
+P 5350 2200
+F 0 "J3" H 5430 2242 50  0000 L CNN
+F 1 "-9V" H 5430 2151 50  0000 L CNN
+F 2 "bowicz:WireHole" H 5350 2200 50  0001 C CNN
+F 3 "" H 5350 2200 50  0001 C CNN
+	1    5350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:MAX1044 IC1
+U 1 1 5D6BD1D6
+P 4500 2000
+F 0 "IC1" H 4500 2317 50  0000 C CNN
+F 1 "MAX1044" H 4500 2226 50  0000 C CNN
+F 2 "bowicz:DIP_8pin_TH" H 4500 2000 50  0001 L BNN
+F 3 "MAX1044" H 4500 2000 50  0001 L BNN
+F 4 "DIP-8 Maxim Integrated" H 4500 2000 50  0001 L BNN "Field4"
+F 5 "Unavailable" H 4500 2000 50  0001 L BNN "Field5"
+F 6 "None" H 4500 2000 50  0001 L BNN "Field7"
+F 7 "Maxim Integrated" H 4500 2000 50  0001 L BNN "Field8"
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1900 4050 1900
+Wire Wire Line
+	4050 1900 4050 1600
+Wire Wire Line
+	4050 1600 4950 1600
+Wire Wire Line
+	4950 1600 4950 1800
+Wire Wire Line
+	4950 1900 4800 1900
+Connection ~ 4950 1800
+Wire Wire Line
+	4950 1800 4950 1900
+$Comp
+L 4ms-passives:CAP-ELEC-TH C2
+U 1 1 5D6C1E84
+P 4950 2500
+F 0 "C2" H 4822 2408 45  0000 R CNN
+F 1 "100u" H 4822 2492 45  0000 R CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 4980 2650 20  0001 C CNN
+F 3 "" H 4950 2500 60  0001 C CNN
+	1    4950 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0101
+U 1 1 5D6C2FD3
+P 4950 2700
+F 0 "#PWR0101" H 4950 2450 50  0001 C CNN
+F 1 "GND" H 4955 2527 50  0000 C CNN
+F 2 "" H 4950 2700 50  0001 C CNN
+F 3 "" H 4950 2700 50  0001 C CNN
+	1    4950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2200 4950 2200
+Wire Wire Line
+	4950 2200 4950 2300
+Connection ~ 4950 2200
+Wire Wire Line
+	4950 2200 4800 2200
+Wire Wire Line
+	4950 2600 4950 2700
+$Comp
+L 4ms-passives:CAP-ELEC-TH C1
+U 1 1 5D6C58F1
+P 3850 2050
+F 0 "C1" H 3978 2042 45  0000 L CNN
+F 1 "100u" H 3978 1958 45  0000 L CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 3880 2200 20  0001 C CNN
+F 3 "" H 3850 2050 60  0001 C CNN
+	1    3850 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1950 3850 1900
+Wire Wire Line
+	3850 1900 3950 1900
+Wire Wire Line
+	3950 1900 3950 2000
+Wire Wire Line
+	3950 2000 4200 2000
+Wire Wire Line
+	4200 2200 3950 2200
+Wire Wire Line
+	3950 2200 3950 2300
+Wire Wire Line
+	3950 2300 3850 2300
+Wire Wire Line
+	3850 2300 3850 2250
+$Comp
+L 4ms-power:GND #PWR0102
+U 1 1 5D6C710F
+P 4150 2700
+F 0 "#PWR0102" H 4150 2450 50  0001 C CNN
+F 1 "GND" H 4155 2527 50  0000 C CNN
+F 2 "" H 4150 2700 50  0001 C CNN
+F 3 "" H 4150 2700 50  0001 C CNN
+	1    4150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2600 4150 2700
+Wire Wire Line
+	4200 2100 4150 2100
+Wire Wire Line
+	4150 2100 4150 2600
+Wire Wire Line
+	4150 2600 3950 2600
+Connection ~ 4150 2600
+Wire Wire Line
+	4950 1800 5300 1800
+$Comp
+L 4ms-power:PWR_FLAG #FLG0101
+U 1 1 5D6C9B12
+P 5300 1800
+F 0 "#FLG0101" H 5300 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5300 1973 50  0000 C CNN
+F 2 "" H 5300 1800 50  0001 C CNN
+F 3 "" H 5300 1800 50  0001 C CNN
+	1    5300 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 1800
+Wire Wire Line
+	5300 1800 5350 1800
+$Comp
+L 4ms-power:PWR_FLAG #FLG0102
+U 1 1 5D6CA0DD
+P 4150 2600
+F 0 "#FLG0102" H 4150 2675 50  0001 C CNN
+F 1 "PWR_FLAG" V 4150 2728 50  0000 L CNN
+F 2 "" H 4150 2600 50  0001 C CNN
+F 3 "" H 4150 2600 50  0001 C CNN
+	1    4150 2600
+	0    1    1    0   
+$EndComp
+NoConn ~ 4800 2000
+NoConn ~ 4800 2100
+$EndSCHEMATC

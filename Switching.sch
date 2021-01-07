@@ -1,0 +1,760 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+9V #PWR029
+U 1 1 5E320462
+P 1150 1100
+F 0 "#PWR029" H 1150 950 50  0001 C CNN
+F 1 "+9V" H 1165 1273 50  0000 C CNN
+F 2 "" H 1150 1100 50  0001 C CNN
+F 3 "" H 1150 1100 50  0001 C CNN
+	1    1150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR031
+U 1 1 5E3223C7
+P 1150 1250
+F 0 "#PWR031" H 1150 1000 50  0001 C CNN
+F 1 "GND" H 1155 1077 50  0000 C CNN
+F 2 "" H 1150 1250 50  0001 C CNN
+F 3 "" H 1150 1250 50  0001 C CNN
+	1    1150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1100 1150 1100
+$Comp
+L mini-fieldhouse-delay-rescue:NE555-Timer U5
+U 1 1 5FFF4315
+P 3900 3100
+F 0 "U5" H 3750 3700 50  0000 C CNN
+F 1 "NE555" H 3750 3600 50  0000 C CNN
+F 2 "bowicz:DIP_8pin_TH" H 3900 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3900 3100 50  0001 C CNN
+	1    3900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR040
+U 1 1 5FFF52D7
+P 3900 2700
+F 0 "#PWR040" H 3900 2550 50  0001 C CNN
+F 1 "+9V" H 3915 2873 50  0000 C CNN
+F 2 "" H 3900 2700 50  0001 C CNN
+F 3 "" H 3900 2700 50  0001 C CNN
+	1    3900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR049
+U 1 1 5FFF59DE
+P 3900 3500
+F 0 "#PWR049" H 3900 3250 50  0001 C CNN
+F 1 "GND" H 3905 3327 50  0000 C CNN
+F 2 "" H 3900 3500 50  0001 C CNN
+F 3 "" H 3900 3500 50  0001 C CNN
+	1    3900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2900 3300 2900
+Wire Wire Line
+	3300 2900 3300 2450
+Wire Wire Line
+	3300 2450 3900 2450
+Wire Wire Line
+	4500 2450 4500 3300
+Wire Wire Line
+	4500 3300 4400 3300
+Wire Wire Line
+	3900 2700 3700 2700
+Wire Wire Line
+	3700 2700 3700 3200
+Wire Wire Line
+	3700 3200 3300 3200
+Wire Wire Line
+	3300 3200 3300 3300
+Wire Wire Line
+	3300 3300 3400 3300
+Connection ~ 3900 2700
+$Comp
+L 4ms-passives:CAP-ELEC-TH SC1
+U 1 1 6004387E
+P 4800 2150
+F 0 "SC1" H 4928 2142 45  0000 L CNN
+F 1 "1u" H 4928 2058 45  0000 L CNN
+F 2 "bowicz:Cap_TH" H 4830 2300 20  0001 C CNN
+F 3 "" H 4800 2150 60  0001 C CNN
+	1    4800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US SR1
+U 1 1 60045305
+P 5050 2050
+F 0 "SR1" V 4845 2050 50  0000 C CNN
+F 1 "100k" V 4936 2050 50  0000 C CNN
+F 2 "bowicz:Resistor" V 5090 2040 50  0001 C CNN
+F 3 "~" H 5050 2050 50  0001 C CNN
+	1    5050 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2900 5300 2900
+Wire Wire Line
+	5300 2050 5200 2050
+Wire Wire Line
+	4900 2050 4800 2050
+$Comp
+L 4ms-power:GND #PWR036
+U 1 1 6007331B
+P 4800 2350
+F 0 "#PWR036" H 4800 2100 50  0001 C CNN
+F 1 "GND" H 4805 2177 50  0000 C CNN
+F 2 "" H 4800 2350 50  0001 C CNN
+F 3 "" H 4800 2350 50  0001 C CNN
+	1    4800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:DIODE_TH D1
+U 1 1 60074384
+P 6750 1550
+F 0 "D1" H 6750 1334 50  0000 C CNN
+F 1 "1n4001" H 6750 1425 50  0000 C CNN
+F 2 "bowicz:Diode" H 6650 1550 50  0001 C CNN
+F 3 "" H 6750 1550 50  0001 C CNN
+	1    6750 1550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5400 2050 5300 2050
+Connection ~ 5300 2050
+Wire Wire Line
+	5300 2050 5300 2900
+$Comp
+L 4ms-headers:Conn_01x01 J7
+U 1 1 600FC5D4
+P 4500 2050
+F 0 "J7" H 4418 1825 50  0000 C CNN
+F 1 "FS1b" H 4418 1916 50  0000 C CNN
+F 2 "bowicz:WireHole" H 4500 2050 50  0001 C CNN
+F 3 "" H 4500 2050 50  0001 C CNN
+	1    4500 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 2050 4800 2050
+Connection ~ 4800 2050
+$Comp
+L 4ms-headers:Conn_01x01 J6
+U 1 1 6010C65D
+P 3300 2250
+F 0 "J6" V 3264 2162 50  0000 R CNN
+F 1 "FS1a" V 3173 2162 50  0000 R CNN
+F 2 "bowicz:WireHole" H 3300 2250 50  0001 C CNN
+F 3 "" H 3300 2250 50  0001 C CNN
+	1    3300 2250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3300 2450
+$Comp
+L 4ms-power:+4.5V #PWR038
+U 1 1 6010D036
+P 3900 2450
+F 0 "#PWR038" H 3900 2300 50  0001 C CNN
+F 1 "+4.5V" H 3915 2623 50  0000 C CNN
+F 2 "" H 3900 2450 50  0001 C CNN
+F 3 "" H 3900 2450 50  0001 C CNN
+	1    3900 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 2450
+Wire Wire Line
+	3900 2450 4500 2450
+NoConn ~ 4400 3100
+NoConn ~ 3400 3100
+$Comp
+L power:+9V #PWR028
+U 1 1 5FA304E2
+P 1500 900
+F 0 "#PWR028" H 1500 750 50  0001 C CNN
+F 1 "+9V" H 1515 1073 50  0000 C CNN
+F 2 "" H 1500 900 50  0001 C CNN
+F 3 "" H 1500 900 50  0001 C CNN
+	1    1500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US PR1
+U 1 1 5FA30843
+P 1500 1000
+F 0 "PR1" H 1568 1046 50  0000 L CNN
+F 1 "10k" H 1568 955 50  0000 L CNN
+F 2 "bowicz:Resistor" H 1500 1000 50  0001 C CNN
+F 3 "~" H 1500 1000 50  0001 C CNN
+	1    1500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US PR2
+U 1 1 5FA30E48
+P 1500 1300
+F 0 "PR2" H 1568 1346 50  0000 L CNN
+F 1 "10k" H 1568 1255 50  0000 L CNN
+F 2 "bowicz:Resistor" H 1500 1300 50  0001 C CNN
+F 3 "~" H 1500 1300 50  0001 C CNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR032
+U 1 1 5FA3164D
+P 1500 1400
+F 0 "#PWR032" H 1500 1150 50  0001 C CNN
+F 1 "GND" H 1505 1227 50  0000 C CNN
+F 2 "" H 1500 1400 50  0001 C CNN
+F 3 "" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1200 1500 1150
+$Comp
+L 4ms-passives:CAP-ELEC-TH PC4
+U 1 1 5FA32892
+P 1900 1250
+F 0 "PC4" H 2028 1242 45  0000 L CNN
+F 1 "100u" H 2028 1158 45  0000 L CNN
+F 2 "4ms-footprints:Cap_Electrolytic_TH" H 1930 1400 20  0001 C CNN
+F 3 "" H 1900 1250 60  0001 C CNN
+	1    1900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1150 1500 1150
+Connection ~ 1500 1150
+Wire Wire Line
+	1500 1150 1500 1100
+$Comp
+L 4ms-power:GND #PWR033
+U 1 1 5FA34200
+P 1900 1450
+F 0 "#PWR033" H 1900 1200 50  0001 C CNN
+F 1 "GND" H 1905 1277 50  0000 C CNN
+F 2 "" H 1900 1450 50  0001 C CNN
+F 3 "" H 1900 1450 50  0001 C CNN
+	1    1900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:+4.5V #PWR030
+U 1 1 5FA345F1
+P 1900 1150
+F 0 "#PWR030" H 1900 1000 50  0001 C CNN
+F 1 "+4.5V" H 1915 1323 50  0000 C CNN
+F 2 "" H 1900 1150 50  0001 C CNN
+F 3 "" H 1900 1150 50  0001 C CNN
+	1    1900 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 1150
+$Comp
+L Device:R_Small_US R27
+U 1 1 5FA813F5
+P 6050 3100
+F 0 "R27" H 6118 3146 50  0000 L CNN
+F 1 "1M" H 6118 3055 50  0000 L CNN
+F 2 "bowicz:Resistor" H 6050 3100 50  0001 C CNN
+F 3 "~" H 6050 3100 50  0001 C CNN
+	1    6050 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR044
+U 1 1 5FA813FB
+P 6050 3200
+F 0 "#PWR044" H 6050 2950 50  0001 C CNN
+F 1 "GND" H 6055 3027 50  0000 C CNN
+F 2 "" H 6050 3200 50  0001 C CNN
+F 3 "" H 6050 3200 50  0001 C CNN
+	1    6050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3000 6050 2950
+$Comp
+L 4ms-power:GND #PWR041
+U 1 1 5FA5E811
+P 7400 2700
+F 0 "#PWR041" H 7400 2450 50  0001 C CNN
+F 1 "GND" H 7405 2527 50  0000 C CNN
+F 2 "" H 7400 2700 50  0001 C CNN
+F 3 "" H 7400 2700 50  0001 C CNN
+	1    7400 2700
+	-1   0    0    -1  
+$EndComp
+Connection ~ 7400 2450
+Wire Wire Line
+	7400 2500 7400 2450
+$Comp
+L Device:R_Small_US R26
+U 1 1 5FA5E80B
+P 7400 2600
+F 0 "R26" H 7468 2646 50  0000 L CNN
+F 1 "1M" H 7468 2555 50  0000 L CNN
+F 2 "bowicz:Resistor" H 7400 2600 50  0001 C CNN
+F 3 "~" H 7400 2600 50  0001 C CNN
+	1    7400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2450 7400 2450
+Text HLabel 7550 2450 2    50   Input ~ 0
+JI
+Text HLabel 6450 2550 0    50   Input ~ 0
+PI
+Text HLabel 7050 2850 2    50   Input ~ 0
+PO
+Text HLabel 6000 2950 0    50   Input ~ 0
+JO
+$Comp
+L mini-fieldhouse-delay-rescue:CD4053B-Analog_Switch U6
+U 1 1 5FDA877F
+P 6550 4650
+F 0 "U6" H 6400 5550 50  0000 C CNN
+F 1 "CD4053B" H 6400 5450 50  0000 C CNN
+F 2 "bowicz:DIP-16" H 6700 3900 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 6530 4850 50  0001 C CNN
+	1    6550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR052
+U 1 1 5FDA8789
+P 6650 3950
+F 0 "#PWR052" H 6650 3800 50  0001 C CNN
+F 1 "+9V" H 6665 4123 50  0000 C CNN
+F 2 "" H 6650 3950 50  0001 C CNN
+F 3 "" H 6650 3950 50  0001 C CNN
+	1    6650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR058
+U 1 1 5FDA878F
+P 6450 5350
+F 0 "#PWR058" H 6450 5100 50  0001 C CNN
+F 1 "GND" H 6455 5177 50  0000 C CNN
+F 2 "" H 6450 5350 50  0001 C CNN
+F 3 "" H 6450 5350 50  0001 C CNN
+	1    6450 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L mini-fieldhouse-delay-rescue:NE555-Timer U7
+U 1 1 5FDA8795
+P 4450 5450
+F 0 "U7" H 4300 6050 50  0000 C CNN
+F 1 "NE555" H 4300 5950 50  0000 C CNN
+F 2 "bowicz:DIP_8pin_TH" H 4450 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4450 5450 50  0001 C CNN
+	1    4450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR056
+U 1 1 5FDA879B
+P 4450 5050
+F 0 "#PWR056" H 4450 4900 50  0001 C CNN
+F 1 "+9V" H 4465 5223 50  0000 C CNN
+F 2 "" H 4450 5050 50  0001 C CNN
+F 3 "" H 4450 5050 50  0001 C CNN
+	1    4450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR061
+U 1 1 5FDA87A1
+P 4450 5850
+F 0 "#PWR061" H 4450 5600 50  0001 C CNN
+F 1 "GND" H 4455 5677 50  0000 C CNN
+F 2 "" H 4450 5850 50  0001 C CNN
+F 3 "" H 4450 5850 50  0001 C CNN
+	1    4450 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5250 3850 5250
+Wire Wire Line
+	3850 5250 3850 4800
+Wire Wire Line
+	5050 4800 5050 5650
+Wire Wire Line
+	5050 5650 4950 5650
+Wire Wire Line
+	4450 5050 4250 5050
+Wire Wire Line
+	4250 5050 4250 5550
+Wire Wire Line
+	4250 5550 3850 5550
+Wire Wire Line
+	3850 5550 3850 5650
+Wire Wire Line
+	3850 5650 3950 5650
+Connection ~ 4450 5050
+$Comp
+L 4ms-passives:CAP-ELEC-TH SC2
+U 1 1 5FDA87B2
+P 4800 4350
+F 0 "SC2" H 4928 4342 45  0000 L CNN
+F 1 "1u" H 4928 4258 45  0000 L CNN
+F 2 "bowicz:Cap_TH" H 4830 4500 20  0001 C CNN
+F 3 "" H 4800 4350 60  0001 C CNN
+	1    4800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US SR2
+U 1 1 5FDA87B8
+P 5050 4250
+F 0 "SR2" V 4845 4250 50  0000 C CNN
+F 1 "100k" V 4936 4250 50  0000 C CNN
+F 2 "bowicz:Resistor" V 5090 4240 50  0001 C CNN
+F 3 "~" H 5050 4250 50  0001 C CNN
+	1    5050 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 4250 5200 4250
+Wire Wire Line
+	4900 4250 4800 4250
+$Comp
+L 4ms-power:GND #PWR053
+U 1 1 5FDA87C1
+P 4800 4550
+F 0 "#PWR053" H 4800 4300 50  0001 C CNN
+F 1 "GND" H 4805 4377 50  0000 C CNN
+F 2 "" H 4800 4550 50  0001 C CNN
+F 3 "" H 4800 4550 50  0001 C CNN
+	1    4800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:DIODE_TH D2
+U 1 1 5FDA87C7
+P 5550 4250
+F 0 "D2" H 5550 4034 50  0000 C CNN
+F 1 "1n4001" H 5550 4125 50  0000 C CNN
+F 2 "bowicz:Diode" H 5450 4250 50  0001 C CNN
+F 3 "" H 5550 4250 50  0001 C CNN
+	1    5550 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 4250 5300 4250
+Connection ~ 5300 4250
+$Comp
+L 4ms-headers:Conn_01x01 J16
+U 1 1 5FDA87D0
+P 4500 4250
+F 0 "J16" H 4418 4025 50  0000 C CNN
+F 1 "FS2b" H 4418 4116 50  0000 C CNN
+F 2 "bowicz:WireHole" H 4500 4250 50  0001 C CNN
+F 3 "" H 4500 4250 50  0001 C CNN
+	1    4500 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 4250 4800 4250
+Connection ~ 4800 4250
+$Comp
+L 4ms-headers:Conn_01x01 J17
+U 1 1 5FDA87D8
+P 3850 4600
+F 0 "J17" V 3814 4512 50  0000 R CNN
+F 1 "FS2a" V 3723 4512 50  0000 R CNN
+F 2 "bowicz:WireHole" H 3850 4600 50  0001 C CNN
+F 3 "" H 3850 4600 50  0001 C CNN
+	1    3850 4600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3850 4800
+NoConn ~ 4950 5450
+NoConn ~ 3950 5450
+Connection ~ 6450 5350
+Wire Wire Line
+	6550 5350 6450 5350
+Wire Wire Line
+	7050 5150 7100 5150
+Wire Wire Line
+	7050 4750 7200 4750
+$Comp
+L Device:R_US CLR?
+U 1 1 5FF314CA
+P 7900 5050
+AR Path="/5FF314CA" Ref="CLR?"  Part="1" 
+AR Path="/5FD55C66/5FF314CA" Ref="CLR4"  Part="1" 
+F 0 "CLR4" V 7695 5050 50  0000 C CNN
+F 1 "4k7" V 7786 5050 50  0000 C CNN
+F 2 "bowicz:Resistor" V 7940 5040 50  0001 C CNN
+F 3 "~" H 7900 5050 50  0001 C CNN
+	1    7900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5FF49F7D
+P 7900 5200
+AR Path="/5FF49F7D" Ref="#PWR?"  Part="1" 
+AR Path="/5FD55C66/5FF49F7D" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 7900 4950 50  0001 C CNN
+F 1 "GND" H 7905 5027 50  0000 C CNN
+F 2 "" H 7900 5200 50  0001 C CNN
+F 3 "" H 7900 5200 50  0001 C CNN
+	1    7900 5200
+	-1   0    0    -1  
+$EndComp
+Text HLabel 7200 4850 2    50   Input ~ 0
+BrightIn
+Text HLabel 7200 4750 2    50   Input ~ 0
+Mixer
+Text HLabel 5950 5050 0    50   Input ~ 0
+SignalIn
+Text HLabel 6000 4750 0    50   Input ~ 0
+NormalOut
+Wire Wire Line
+	7050 4850 7150 4850
+Wire Wire Line
+	7150 4850 7150 5050
+Wire Wire Line
+	7150 5050 7050 5050
+Connection ~ 7150 4850
+Wire Wire Line
+	7150 4850 7200 4850
+$Comp
+L 4ms-power:GND #PWR057
+U 1 1 5FD764C7
+P 6050 5150
+F 0 "#PWR057" H 6050 4900 50  0001 C CNN
+F 1 "GND" H 6055 4977 50  0000 C CNN
+F 2 "" H 6050 5150 50  0001 C CNN
+F 3 "" H 6050 5150 50  0001 C CNN
+	1    6050 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 4250 6050 4350
+Connection ~ 6050 4250
+Wire Wire Line
+	6050 4150 6050 4250
+$Comp
+L 4ms-passives:LED-C1-A2 LED4
+U 1 1 5FF314C4
+P 7900 4800
+F 0 "LED4" V 7992 4963 45  0000 L CNN
+F 1 "SERIES" V 7908 4963 45  0000 L CNN
+F 2 "bowicz:LED" H 7930 4950 20  0001 C CNN
+F 3 "" H 7900 4800 60  0001 C CNN
+	1    7900 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US CLR?
+U 1 1 5FDD88F4
+P 8150 5050
+AR Path="/5FDD88F4" Ref="CLR?"  Part="1" 
+AR Path="/5FD55C66/5FDD88F4" Ref="CLR5"  Part="1" 
+F 0 "CLR5" V 7945 5050 50  0000 C CNN
+F 1 "4k7" V 8036 5050 50  0000 C CNN
+F 2 "bowicz:Resistor" V 8190 5040 50  0001 C CNN
+F 3 "~" H 8150 5050 50  0001 C CNN
+	1    8150 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5FDD88FA
+P 8150 5200
+AR Path="/5FDD88FA" Ref="#PWR?"  Part="1" 
+AR Path="/5FD55C66/5FDD88FA" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 8150 4950 50  0001 C CNN
+F 1 "GND" H 8155 5027 50  0000 C CNN
+F 2 "" H 8150 5200 50  0001 C CNN
+F 3 "" H 8150 5200 50  0001 C CNN
+	1    8150 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:LED-C1-A2 LED5
+U 1 1 5FDD8900
+P 8150 4800
+F 0 "LED5" V 8242 4963 45  0000 L CNN
+F 1 "PARALLEL" V 8158 4963 45  0000 L CNN
+F 2 "bowicz:LED" H 8180 4950 20  0001 C CNN
+F 3 "" H 8150 4800 60  0001 C CNN
+	1    8150 4800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7900 4550 7900 4600
+Wire Wire Line
+	8150 4600 8150 4450
+NoConn ~ 7100 5150
+Wire Wire Line
+	4950 5250 5300 5250
+Wire Wire Line
+	5300 4250 5300 5250
+Wire Wire Line
+	6050 4250 5700 4250
+$Comp
+L Device:R_US CLR?
+U 1 1 5FE55244
+P 5950 2050
+AR Path="/5FE55244" Ref="CLR?"  Part="1" 
+AR Path="/5FD55C66/5FE55244" Ref="CLR3"  Part="1" 
+F 0 "CLR3" V 5745 2050 50  0000 C CNN
+F 1 "300" V 5836 2050 50  0000 C CNN
+F 2 "bowicz:Resistor" V 5990 2040 50  0001 C CNN
+F 3 "~" H 5950 2050 50  0001 C CNN
+	1    5950 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:LED-C1-A2 LED1
+U 1 1 5FE55250
+P 5600 2050
+F 0 "LED1" V 5692 2213 45  0000 L CNN
+F 1 "BYPASS" V 5608 2213 45  0000 L CNN
+F 2 "bowicz:LED" H 5630 2200 20  0001 C CNN
+F 3 "" H 5600 2050 60  0001 C CNN
+	1    5600 2050
+	-1   0    0    -1  
+$EndComp
+Text HLabel 900  1100 0    50   Input ~ 0
+9V
+Text HLabel 900  1250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	900  1250 1150 1250
+Wire Wire Line
+	6000 2950 6050 2950
+Connection ~ 6050 2950
+Text Notes 5700 1150 0    118  ~ 24
+Bypass\n
+Text Notes 5200 5850 0    118  ~ 24
+Parallel | Series\n
+Text Notes 2800 1100 0    98   ~ 0
+Featuring the Incandenza Bypass \nfrom Demedash Effects\n
+$Comp
+L 4ms-power:GND #PWR0103
+U 1 1 5FD689F1
+P 7100 2050
+F 0 "#PWR0103" H 7100 1800 50  0001 C CNN
+F 1 "GND" H 7105 1877 50  0000 C CNN
+F 2 "" H 7100 2050 50  0001 C CNN
+F 3 "" H 7100 2050 50  0001 C CNN
+	1    7100 2050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7400 2450 7050 2450
+Wire Wire Line
+	6200 2950 6050 2950
+$Comp
+L 4ms-power:GND #PWR0104
+U 1 1 5FD747CF
+P 6450 2750
+F 0 "#PWR0104" H 6450 2500 50  0001 C CNN
+F 1 "GND" H 6455 2577 50  0000 C CNN
+F 2 "" H 6450 2750 50  0001 C CNN
+F 3 "" H 6450 2750 50  0001 C CNN
+	1    6450 2750
+	0    1    1    0   
+$EndComp
+Connection ~ 6200 2950
+Wire Wire Line
+	7100 1550 6900 1550
+Wire Wire Line
+	6600 1550 6400 1550
+Wire Wire Line
+	5800 2050 5700 2050
+$Comp
+L Relay:EC2-4.5NU K1
+U 1 1 5FF03DB8
+P 6750 2450
+F 0 "K1" V 5983 2450 50  0000 C CNN
+F 1 "EC2-4.5NU" V 6074 2450 50  0000 C CNN
+F 2 "Relay_THT:Relay_DPDT_Kemet_EC2" H 6750 2450 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf" H 6750 2450 50  0001 C CNN
+	1    6750 2450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6100 2050 6400 2050
+Wire Wire Line
+	7100 2050 7050 2050
+Wire Wire Line
+	7100 1550 7100 2050
+Wire Wire Line
+	6400 2050 6450 2050
+Wire Wire Line
+	6400 1550 6400 2050
+Connection ~ 7100 2050
+Wire Wire Line
+	6200 2950 6450 2950
+Wire Wire Line
+	6450 2350 6200 2350
+Wire Wire Line
+	6200 2350 6200 2950
+Connection ~ 6400 2050
+Wire Wire Line
+	3850 4800 4450 4800
+$Comp
+L 4ms-power:+4.5V #PWR0107
+U 1 1 60125553
+P 4450 4800
+F 0 "#PWR0107" H 4450 4650 50  0001 C CNN
+F 1 "+4.5V" H 4465 4973 50  0000 C CNN
+F 2 "" H 4450 4800 50  0001 C CNN
+F 3 "" H 4450 4800 50  0001 C CNN
+	1    4450 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 4800
+Wire Wire Line
+	4450 4800 5050 4800
+Wire Wire Line
+	7050 4450 8150 4450
+Wire Wire Line
+	7050 4550 7900 4550
+$Comp
+L power:+9V #PWR?
+U 1 1 5FF377CA
+P 6050 4450
+F 0 "#PWR?" H 6050 4300 50  0001 C CNN
+F 1 "+9V" V 6065 4578 50  0000 L CNN
+F 2 "" H 6050 4450 50  0001 C CNN
+F 3 "" H 6050 4450 50  0001 C CNN
+	1    6050 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 5050 6050 5050
+Wire Wire Line
+	6000 4750 6050 4750
+$EndSCHEMATC

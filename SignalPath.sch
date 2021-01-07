@@ -1,0 +1,1320 @@
+EESchema Schematic File Version 4
+LIBS:shakey-legs-LDRs-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT_US POT?
+U 1 1 5FCD9C1C
+P 6900 4550
+AR Path="/5FCD9C1C" Ref="POT?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9C1C" Ref="POT1"  Part="1" 
+F 0 "POT1" H 6832 4504 50  0000 R CNN
+F 1 "100kB" H 6832 4595 50  0000 R CNN
+F 2 "bowicz:Pot_16mm" H 6900 4550 50  0001 C CNN
+F 3 "~" H 6900 4550 50  0001 C CNN
+	1    6900 4550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	950  4500 950  4650
+Connection ~ 950  4500
+Wire Wire Line
+	950  4300 950  4500
+$Comp
+L power:+9V #PWR?
+U 1 1 5FCD9C25
+P 950 4500
+AR Path="/5FCD9C25" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9C25" Ref="#PWR0137"  Part="1" 
+F 0 "#PWR0137" H 950 4350 50  0001 C CNN
+F 1 "+9V" V 965 4628 50  0000 L CNN
+F 2 "" H 950 4500 50  0001 C CNN
+F 3 "" H 950 4500 50  0001 C CNN
+	1    950  4500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5600 4250 5550 4250
+Connection ~ 5600 4250
+Wire Wire Line
+	5600 4200 5600 4250
+Wire Wire Line
+	5600 3900 5050 3900
+Connection ~ 5600 3900
+Wire Wire Line
+	5600 4000 5600 3900
+Connection ~ 5050 3900
+Wire Wire Line
+	5950 3900 5600 3900
+Wire Wire Line
+	950  4650 1100 4650
+Wire Wire Line
+	1050 4300 950  4300
+Wire Wire Line
+	1400 4300 1350 4300
+Wire Wire Line
+	1400 4650 1400 4300
+$Comp
+L 4ms-passives:DIODE_TH PD?
+U 1 1 5FCD9C39
+P 1200 4300
+AR Path="/5FCD9C39" Ref="PD?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9C39" Ref="PD2"  Part="1" 
+F 0 "PD2" H 1200 4516 50  0000 C CNN
+F 1 "1n4001" H 1200 4425 50  0000 C CNN
+F 2 "4ms-footprints:Diode_BAT-85S_TH" H 1100 4300 50  0001 C CNN
+F 3 "" H 1200 4300 50  0001 C CNN
+	1    1200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4650 1300 4650
+Connection ~ 1400 4650
+Wire Wire Line
+	1400 4700 1400 4650
+Wire Wire Line
+	1500 4650 1400 4650
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5FCD9C43
+P 1400 5000
+AR Path="/5FCD9C43" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9C43" Ref="#PWR0138"  Part="1" 
+F 0 "#PWR0138" H 1400 4750 50  0001 C CNN
+F 1 "GND" H 1405 4827 50  0000 C CNN
+F 2 "" H 1400 5000 50  0001 C CNN
+F 3 "" H 1400 5000 50  0001 C CNN
+	1    1400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH PC?
+U 1 1 5FCD9C49
+P 1400 4850
+AR Path="/5FCD9C49" Ref="PC?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9C49" Ref="PC4"  Part="1" 
+F 0 "PC4" H 1515 4896 50  0000 L CNN
+F 1 "1u" H 1515 4805 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 1438 4700 50  0001 C CNN
+F 3 "" H 1400 4850 50  0001 C CNN
+	1    1400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US PR?
+U 1 1 5EF79324
+P 1200 4650
+AR Path="/5EF79324" Ref="PR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79324" Ref="PR5"  Part="1" 
+F 0 "PR5" V 995 4650 50  0000 C CNN
+F 1 "56k" V 1086 4650 50  0000 C CNN
+F 2 "4ms_Resistor:R_0402" H 1200 4650 50  0001 C CNN
+F 3 "~" H 1200 4650 50  0001 C CNN
+	1    1200 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 5250 1700 5350
+$Comp
+L Device:Q_NPN_CBE PQ?
+U 1 1 5EF79325
+P 1700 4650
+AR Path="/5EF79325" Ref="PQ?"  Part="1" 
+AR Path="/5FC58D8E/5EF79325" Ref="PQ1"  Part="1" 
+F 0 "PQ1" H 1891 4696 50  0000 L CNN
+F 1 "2n2222" H 1891 4605 50  0000 L CNN
+F 2 "bowicz:TO-92" H 1900 4750 50  0001 C CNN
+F 3 "~" H 1700 4650 50  0001 C CNN
+	1    1700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2450 8500 2450
+Wire Wire Line
+	8900 2900 8900 2850
+Wire Wire Line
+	8050 1800 8050 1900
+Wire Wire Line
+	8050 2100 8050 2200
+Wire Wire Line
+	9000 1950 9100 1950
+Wire Wire Line
+	8500 1950 8500 2000
+Connection ~ 8500 1950
+Wire Wire Line
+	8700 1950 8500 1950
+Wire Wire Line
+	8500 1750 8500 1950
+Wire Wire Line
+	8200 2200 8050 2200
+Wire Wire Line
+	8050 2200 8050 2300
+Connection ~ 8050 2200
+Wire Wire Line
+	8050 2200 7950 2200
+Wire Wire Line
+	8900 3250 8900 3200
+Connection ~ 8900 3250
+Wire Wire Line
+	9200 3250 8900 3250
+Wire Wire Line
+	9200 3050 9200 3250
+Wire Wire Line
+	9050 3050 9200 3050
+Wire Wire Line
+	8050 2700 8050 2600
+Wire Wire Line
+	8500 2800 8500 2750
+Wire Wire Line
+	8900 3300 8900 3250
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5FCD9C73
+P 8900 3300
+AR Path="/5FCD9C73" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9C73" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 8900 3050 50  0001 C CNN
+F 1 "GND" H 8905 3127 50  0000 C CNN
+F 2 "" H 8900 3300 50  0001 C CNN
+F 3 "" H 8900 3300 50  0001 C CNN
+	1    8900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF79327
+P 8050 2700
+AR Path="/5EF79327" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79327" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 8050 2450 50  0001 C CNN
+F 1 "GND" H 8055 2527 50  0000 C CNN
+F 2 "" H 8050 2700 50  0001 C CNN
+F 3 "" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF79328
+P 8500 2800
+AR Path="/5EF79328" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79328" Ref="#PWR0141"  Part="1" 
+F 0 "#PWR0141" H 8500 2550 50  0001 C CNN
+F 1 "GND" H 8505 2627 50  0000 C CNN
+F 2 "" H 8500 2800 50  0001 C CNN
+F 3 "" H 8500 2800 50  0001 C CNN
+	1    8500 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 8500 2450
+Wire Wire Line
+	8500 2450 8500 2550
+Wire Wire Line
+	8500 2450 8500 2400
+Wire Wire Line
+	8900 2550 8900 2450
+$Comp
+L Device:R_POT_US Gain?
+U 1 1 5FCD9C89
+P 8900 3050
+AR Path="/5FCD9C89" Ref="Gain?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9C89" Ref="Gain1"  Part="1" 
+F 0 "Gain1" H 8832 3004 50  0000 R CNN
+F 1 "10kC" H 8832 3095 50  0000 R CNN
+F 2 "bowicz:Pot_16mm" H 8900 3050 50  0001 C CNN
+F 3 "~" H 8900 3050 50  0001 C CNN
+	1    8900 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L 4ms-passives:CAP-ELEC-TH C?
+U 1 1 5EF7932A
+P 8900 2650
+AR Path="/5EF7932A" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF7932A" Ref="C14"  Part="1" 
+F 0 "C14" H 9028 2642 45  0000 L CNN
+F 1 "100u" H 9028 2558 45  0000 L CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 8930 2800 20  0001 C CNN
+F 3 "" H 8900 2650 60  0001 C CNN
+	1    8900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF7932B
+P 8500 2650
+AR Path="/5EF7932B" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF7932B" Ref="R19"  Part="1" 
+F 0 "R19" H 8568 2696 50  0000 L CNN
+F 1 "5k6" H 8568 2605 50  0000 L CNN
+F 2 "4ms_Resistor:R_0402" H 8500 2650 50  0001 C CNN
+F 3 "~" H 8500 2650 50  0001 C CNN
+	1    8500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5EF7932C
+P 8850 1950
+AR Path="/5EF7932C" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF7932C" Ref="C10"  Part="1" 
+F 0 "C10" V 8598 1950 50  0000 C CNN
+F 1 "100n" V 8689 1950 50  0000 C CNN
+F 2 "4ms_Capacitor:C_0603" H 8888 1800 50  0001 C CNN
+F 3 "" H 8850 1950 50  0001 C CNN
+	1    8850 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 1550 8500 1500
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5EF7932D
+P 8400 2200
+AR Path="/5EF7932D" Ref="Q?"  Part="1" 
+AR Path="/5FC58D8E/5EF7932D" Ref="Q2"  Part="1" 
+F 0 "Q2" H 8606 2246 50  0000 L CNN
+F 1 "BS170" H 8606 2155 50  0000 L CNN
+F 2 "4ms_Package_SOT:SOT23-3_PO123" H 8600 2300 50  0001 C CNN
+F 3 "~" H 8400 2200 50  0001 C CNN
+	1    8400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF7932E
+P 8500 1650
+AR Path="/5EF7932E" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF7932E" Ref="R6"  Part="1" 
+F 0 "R6" H 8568 1696 50  0000 L CNN
+F 1 "5k6" H 8568 1605 50  0000 L CNN
+F 2 "4ms_Resistor:R_0402" H 8500 1650 50  0001 C CNN
+F 3 "~" H 8500 1650 50  0001 C CNN
+	1    8500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR?
+U 1 1 5EF7932F
+P 8500 1500
+AR Path="/5EF7932F" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF7932F" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 8500 1350 50  0001 C CNN
+F 1 "+9V" H 8515 1673 50  0000 C CNN
+F 2 "" H 8500 1500 50  0001 C CNN
+F 3 "" H 8500 1500 50  0001 C CNN
+	1    8500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF79330
+P 8050 2000
+AR Path="/5EF79330" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF79330" Ref="R12"  Part="1" 
+F 0 "R12" H 7982 1954 50  0000 R CNN
+F 1 "1M" H 7982 2045 50  0000 R CNN
+F 2 "4ms_Resistor:R_0402" H 8050 2000 50  0001 C CNN
+F 3 "~" H 8050 2000 50  0001 C CNN
+	1    8050 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5EF79331
+P 8050 2450
+AR Path="/5EF79331" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF79331" Ref="C13"  Part="1" 
+F 0 "C13" H 7935 2404 50  0000 R CNN
+F 1 "47p" H 7935 2495 50  0000 R CNN
+F 2 "4ms_Capacitor:C_0603" H 8088 2300 50  0001 C CNN
+F 3 "" H 8050 2450 50  0001 C CNN
+	1    8050 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5FCD9CC1
+P 7800 2200
+AR Path="/5FCD9CC1" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9CC1" Ref="C11"  Part="1" 
+F 0 "C11" V 7548 2200 50  0000 C CNN
+F 1 "1n" V 7639 2200 50  0000 C CNN
+F 2 "4ms_Capacitor:C_0603" H 7838 2050 50  0001 C CNN
+F 3 "" H 7800 2200 50  0001 C CNN
+	1    7800 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_US Blend?
+U 1 1 5FCD9CD2
+P 6450 2200
+AR Path="/5FCD9CD2" Ref="Blend?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9CD2" Ref="Blend1"  Part="1" 
+F 0 "Blend1" H 6383 2246 50  0000 R CNN
+F 1 "50kA" H 6383 2155 50  0000 R CNN
+F 2 "bowicz:Pot_16mm" H 6450 2200 50  0001 C CNN
+F 3 "~" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio:PT2399 U?
+U 1 1 5FCD9CDE
+P 3950 4100
+AR Path="/5FCD9CDE" Ref="U?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9CDE" Ref="U4"  Part="1" 
+F 0 "U4" H 3950 4867 50  0000 C CNN
+F 1 "PT2399" H 3950 4776 50  0000 C CNN
+F 2 "bowicz:DIP-16" H 3950 3700 50  0001 C CNN
+F 3 "http://sound.westhost.com/pt2399.pdf" H 3950 3700 50  0001 C CNN
+	1    3950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP-ELEC-TH C?
+U 1 1 5FCD9CE4
+P 2350 3700
+AR Path="/5FCD9CE4" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9CE4" Ref="C19"  Part="1" 
+F 0 "C19" H 2478 3692 45  0000 L CNN
+F 1 "100u" H 2478 3608 45  0000 L CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 2380 3850 20  0001 C CNN
+F 3 "" H 2350 3700 60  0001 C CNN
+	1    2350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:+5V #PWR?
+U 1 1 5EF79336
+P 2350 3600
+AR Path="/5EF79336" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79336" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 2350 3450 50  0001 C CNN
+F 1 "+5V" H 2365 3773 50  0000 C CNN
+F 2 "" H 2350 3600 50  0001 C CNN
+F 3 "" H 2350 3600 50  0001 C CNN
+	1    2350 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 3600
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5FCD9CF1
+P 2350 3900
+AR Path="/5FCD9CF1" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9CF1" Ref="#PWR0144"  Part="1" 
+F 0 "#PWR0144" H 2350 3650 50  0001 C CNN
+F 1 "GND" H 2355 3727 50  0000 C CNN
+F 2 "" H 2350 3900 50  0001 C CNN
+F 3 "" H 2350 3900 50  0001 C CNN
+	1    2350 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3600 3450 3600
+$Comp
+L 4ms-passives:CAP-ELEC-TH C?
+U 1 1 5FCD9CF8
+P 2950 3800
+AR Path="/5FCD9CF8" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9CF8" Ref="C20"  Part="1" 
+F 0 "C20" H 3078 3792 45  0000 L CNN
+F 1 "47u" H 3078 3708 45  0000 L CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 2980 3950 20  0001 C CNN
+F 3 "" H 2950 3800 60  0001 C CNN
+	1    2950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3700 2950 3700
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5FCD9CFF
+P 2950 4000
+AR Path="/5FCD9CFF" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9CFF" Ref="#PWR0147"  Part="1" 
+F 0 "#PWR0147" H 2950 3750 50  0001 C CNN
+F 1 "GND" H 2955 3827 50  0000 C CNN
+F 2 "" H 2950 4000 50  0001 C CNN
+F 3 "" H 2950 4000 50  0001 C CNN
+	1    2950 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 4000
+Wire Wire Line
+	3450 3900 3250 3900
+Wire Wire Line
+	3250 3900 3250 4000
+Wire Wire Line
+	2950 4000 3250 4000
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5FCD9D09
+P 3000 4650
+AR Path="/5FCD9D09" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9D09" Ref="C23"  Part="1" 
+F 0 "C23" H 2885 4604 50  0000 R CNN
+F 1 "100n" H 2885 4695 50  0000 R CNN
+F 2 "4ms_Capacitor:C_0603" H 3038 4500 50  0001 C CNN
+F 3 "" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5FCD9D0F
+P 3350 4800
+AR Path="/5FCD9D0F" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9D0F" Ref="C25"  Part="1" 
+F 0 "C25" H 3465 4846 50  0000 L CNN
+F 1 "100n" H 3465 4755 50  0000 L CNN
+F 2 "4ms_Capacitor:C_0603" H 3388 4650 50  0001 C CNN
+F 3 "" H 3350 4800 50  0001 C CNN
+	1    3350 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4500 3000 4500
+Wire Wire Line
+	3450 4600 3350 4600
+Wire Wire Line
+	3350 4600 3350 4650
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF7933C
+P 3350 4950
+AR Path="/5EF7933C" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF7933C" Ref="#PWR0148"  Part="1" 
+F 0 "#PWR0148" H 3350 4700 50  0001 C CNN
+F 1 "GND" H 3355 4777 50  0000 C CNN
+F 2 "" H 3350 4950 50  0001 C CNN
+F 3 "" H 3350 4950 50  0001 C CNN
+	1    3350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF7933D
+P 3000 4800
+AR Path="/5EF7933D" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF7933D" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 3000 4550 50  0001 C CNN
+F 1 "GND" H 3005 4627 50  0000 C CNN
+F 2 "" H 3000 4800 50  0001 C CNN
+F 3 "" H 3000 4800 50  0001 C CNN
+	1    3000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5FCD9D24
+P 4500 4900
+AR Path="/5FCD9D24" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9D24" Ref="C26"  Part="1" 
+F 0 "C26" V 4752 4900 50  0000 C CNN
+F 1 "100n" V 4661 4900 50  0000 C CNN
+F 2 "4ms_Capacitor:C_0603" H 4538 4750 50  0001 C CNN
+F 3 "" H 4500 4900 50  0001 C CNN
+	1    4500 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EF7933F
+P 3450 4000
+AR Path="/5EF7933F" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF7933F" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0150" H 3450 3750 50  0001 C CNN
+F 1 "GNDD" V 3454 3890 50  0000 R CNN
+F 2 "" H 3450 4000 50  0001 C CNN
+F 3 "" H 3450 4000 50  0001 C CNN
+	1    3450 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5EF79340
+P 1700 5350
+AR Path="/5EF79340" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79340" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 1700 5100 50  0001 C CNN
+F 1 "GNDD" V 1704 5240 50  0000 R CNN
+F 2 "" H 1700 5350 50  0001 C CNN
+F 3 "" H 1700 5350 50  0001 C CNN
+	1    1700 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5EF79341
+P 4700 3650
+AR Path="/5EF79341" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF79341" Ref="C18"  Part="1" 
+F 0 "C18" H 4815 3696 50  0000 L CNN
+F 1 "560p" H 4815 3605 50  0000 L CNN
+F 2 "4ms_Capacitor:C_0603" H 4738 3500 50  0001 C CNN
+F 3 "" H 4700 3650 50  0001 C CNN
+	1    4700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3600 4550 3600
+Wire Wire Line
+	4550 3600 4550 3500
+Wire Wire Line
+	4550 3500 4700 3500
+Wire Wire Line
+	4700 3800 4550 3800
+Wire Wire Line
+	4550 3800 4550 3700
+Wire Wire Line
+	4550 3700 4450 3700
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF79342
+P 5150 3500
+AR Path="/5EF79342" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF79342" Ref="R21"  Part="1" 
+F 0 "R21" V 4945 3500 50  0000 C CNN
+F 1 "10k" V 5036 3500 50  0000 C CNN
+F 2 "4ms_Resistor:R_0402" H 5150 3500 50  0001 C CNN
+F 3 "~" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF79343
+P 5150 3800
+AR Path="/5EF79343" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF79343" Ref="R22"  Part="1" 
+F 0 "R22" V 4945 3800 50  0000 C CNN
+F 1 "15k" V 5036 3800 50  0000 C CNN
+F 2 "4ms_Resistor:R_0402" H 5150 3800 50  0001 C CNN
+F 3 "~" H 5150 3800 50  0001 C CNN
+	1    5150 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3800 4700 3800
+Connection ~ 4700 3800
+Wire Wire Line
+	4700 3500 5050 3500
+Connection ~ 4700 3500
+Wire Wire Line
+	5250 3800 5350 3800
+Wire Wire Line
+	5350 3800 5350 3500
+Wire Wire Line
+	5350 3500 5250 3500
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FCD9D55
+P 5350 3000
+AR Path="/5FCD9D55" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9D55" Ref="R20"  Part="1" 
+F 0 "R20" V 5145 3000 50  0000 C CNN
+F 1 "15k" V 5236 3000 50  0000 C CNN
+F 2 "4ms_Resistor:R_0402" H 5350 3000 50  0001 C CNN
+F 3 "~" H 5350 3000 50  0001 C CNN
+	1    5350 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-passives:CAP-ELEC-TH C?
+U 1 1 5EF79345
+P 5350 2750
+AR Path="/5EF79345" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF79345" Ref="C15"  Part="1" 
+F 0 "C15" V 5604 2700 45  0000 C CNN
+F 1 "4u7" V 5520 2700 45  0000 C CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 5380 2900 20  0001 C CNN
+F 3 "" H 5350 2750 60  0001 C CNN
+	1    5350 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF79346
+P 5550 2550
+AR Path="/5EF79346" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF79346" Ref="R16"  Part="1" 
+F 0 "R16" H 5482 2504 50  0000 R CNN
+F 1 "100k" H 5482 2595 50  0000 R CNN
+F 2 "4ms_Resistor:R_0402" H 5550 2550 50  0001 C CNN
+F 3 "~" H 5550 2550 50  0001 C CNN
+	1    5550 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 2550 5450 2550
+Wire Wire Line
+	5350 3100 5350 3200
+Wire Wire Line
+	5350 3200 5350 3400
+Connection ~ 5350 3500
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5EF79347
+P 5050 3200
+AR Path="/5EF79347" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF79347" Ref="C16"  Part="1" 
+F 0 "C16" V 4798 3200 50  0000 C CNN
+F 1 "5n6" V 4889 3200 50  0000 C CNN
+F 2 "4ms_Capacitor:C_0603" H 5088 3050 50  0001 C CNN
+F 3 "" H 5050 3200 50  0001 C CNN
+	1    5050 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3200 5200 3200
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF79348
+P 4900 3200
+AR Path="/5EF79348" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79348" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 4900 2950 50  0001 C CNN
+F 1 "GND" V 4905 3072 50  0000 R CNN
+F 2 "" H 4900 3200 50  0001 C CNN
+F 3 "" H 4900 3200 50  0001 C CNN
+	1    4900 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF79349
+P 5650 2550
+AR Path="/5EF79349" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79349" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 5650 2300 50  0001 C CNN
+F 1 "GND" H 5655 2377 50  0000 C CNN
+F 2 "" H 5650 2550 50  0001 C CNN
+F 3 "" H 5650 2550 50  0001 C CNN
+	1    5650 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5FCD9D81
+P 4700 4350
+AR Path="/5FCD9D81" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9D81" Ref="C22"  Part="1" 
+F 0 "C22" V 4952 4350 50  0000 C CNN
+F 1 "100n" V 4861 4350 50  0000 C CNN
+F 2 "4ms_Capacitor:C_0603" H 4738 4200 50  0001 C CNN
+F 3 "" H 4700 4350 50  0001 C CNN
+	1    4700 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 4300 4550 4300
+Wire Wire Line
+	4550 4300 4550 4350
+Wire Wire Line
+	4450 4200 4850 4200
+Wire Wire Line
+	4850 4200 4850 4350
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FCD9D8B
+P 5150 4600
+AR Path="/5FCD9D8B" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9D8B" Ref="R25"  Part="1" 
+F 0 "R25" V 4945 4600 50  0000 C CNN
+F 1 "15k" V 5036 4600 50  0000 C CNN
+F 2 "4ms_Resistor:R_0402" H 5150 4600 50  0001 C CNN
+F 3 "~" H 5150 4600 50  0001 C CNN
+	1    5150 4600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5050 4600 4850 4600
+Connection ~ 4850 4350
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FCD9D93
+P 5450 4250
+AR Path="/5FCD9D93" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9D93" Ref="R24"  Part="1" 
+F 0 "R24" V 5245 4250 50  0000 C CNN
+F 1 "10k" V 5336 4250 50  0000 C CNN
+F 2 "4ms_Resistor:R_0402" H 5450 4250 50  0001 C CNN
+F 3 "~" H 5450 4250 50  0001 C CNN
+	1    5450 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 4000 4900 4000
+Wire Wire Line
+	4900 4000 4900 4250
+Wire Wire Line
+	4650 4500 4650 4900
+Wire Wire Line
+	4450 4500 4650 4500
+Wire Wire Line
+	4350 4900 4350 4750
+Wire Wire Line
+	4350 4750 4450 4750
+Wire Wire Line
+	4450 4750 4450 4600
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5FCD9DA0
+P 5050 4100
+AR Path="/5FCD9DA0" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9DA0" Ref="C21"  Part="1" 
+F 0 "C21" H 4935 4054 50  0000 R CNN
+F 1 "560p" H 4935 4145 50  0000 R CNN
+F 2 "4ms_Capacitor:C_0603" H 5088 3950 50  0001 C CNN
+F 3 "" H 5050 4100 50  0001 C CNN
+	1    5050 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 4350 4850 4600
+Wire Wire Line
+	4900 4250 5050 4250
+Wire Wire Line
+	4450 3900 5050 3900
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FCD9DA9
+P 5600 4100
+AR Path="/5FCD9DA9" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9DA9" Ref="R23"  Part="1" 
+F 0 "R23" V 5395 4100 50  0000 C CNN
+F 1 "15k" V 5486 4100 50  0000 C CNN
+F 2 "4ms_Resistor:R_0402" H 5600 4100 50  0001 C CNN
+F 3 "~" H 5600 4100 50  0001 C CNN
+	1    5600 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 4250 5600 4250
+Wire Wire Line
+	5250 4600 5700 4600
+Wire Wire Line
+	5700 4600 5700 4250
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5EF7934F
+P 5700 4750
+AR Path="/5EF7934F" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF7934F" Ref="C24"  Part="1" 
+F 0 "C24" H 5815 4796 50  0000 L CNN
+F 1 "5n6" H 5815 4705 50  0000 L CNN
+F 2 "4ms_Capacitor:C_0603" H 5738 4600 50  0001 C CNN
+F 3 "" H 5700 4750 50  0001 C CNN
+	1    5700 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 4600
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF79350
+P 5700 4900
+AR Path="/5EF79350" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79350" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 5700 4650 50  0001 C CNN
+F 1 "GND" H 5705 4727 50  0000 C CNN
+F 2 "" H 5700 4900 50  0001 C CNN
+F 3 "" H 5700 4900 50  0001 C CNN
+	1    5700 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF79351
+P 6200 5600
+AR Path="/5EF79351" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF79351" Ref="R26"  Part="1" 
+F 0 "R26" V 5995 5600 50  0000 C CNN
+F 1 "5k6" V 6086 5600 50  0000 C CNN
+F 2 "4ms_Resistor:R_0402" H 6200 5600 50  0001 C CNN
+F 3 "~" H 6200 5600 50  0001 C CNN
+	1    6200 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5EF79352
+P 6400 5800
+AR Path="/5EF79352" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF79352" Ref="C27"  Part="1" 
+F 0 "C27" H 6515 5846 50  0000 L CNN
+F 1 "10n" H 6515 5755 50  0000 L CNN
+F 2 "4ms_Capacitor:C_0603" H 6438 5650 50  0001 C CNN
+F 3 "" H 6400 5800 50  0001 C CNN
+	1    6400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF79353
+P 6400 5950
+AR Path="/5EF79353" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79353" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 6400 5700 50  0001 C CNN
+F 1 "GND" H 6405 5777 50  0000 C CNN
+F 2 "" H 6400 5950 50  0001 C CNN
+F 3 "" H 6400 5950 50  0001 C CNN
+	1    6400 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 4250
+Wire Wire Line
+	5050 4250 5350 4250
+Wire Wire Line
+	5050 3900 5050 3950
+NoConn ~ 3450 4200
+$Comp
+L 4ms-passives:CAP-ELEC-TH C?
+U 1 1 5FCD9DE1
+P 5650 3400
+AR Path="/5FCD9DE1" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9DE1" Ref="C17"  Part="1" 
+F 0 "C17" V 5904 3350 45  0000 C CNN
+F 1 "10u" V 5820 3350 45  0000 C CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 5680 3550 20  0001 C CNN
+F 3 "" H 5650 3400 60  0001 C CNN
+	1    5650 3400
+	0    1    1    0   
+$EndComp
+Connection ~ 5350 3400
+Wire Wire Line
+	5350 3400 5350 3500
+$Comp
+L Device:R_POT_TRIM_US Chaos?
+U 1 1 5EF79355
+P 6150 3550
+AR Path="/5EF79355" Ref="Chaos?"  Part="1" 
+AR Path="/5FC58D8E/5EF79355" Ref="Chaos1"  Part="1" 
+F 0 "Chaos1" H 6082 3504 50  0000 R CNN
+F 1 "50k" H 6082 3595 50  0000 R CNN
+F 2 "4ms_Potentiometer:Pot_Trim_Round_6mm" H 6150 3550 50  0001 C CNN
+F 3 "~" H 6150 3550 50  0001 C CNN
+	1    6150 3550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6350 3550 6300 3550
+Wire Wire Line
+	6150 3700 6350 3700
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5EF79356
+P 5350 2250
+AR Path="/5EF79356" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF79356" Ref="C12"  Part="1" 
+F 0 "C12" V 5098 2250 50  0000 C CNN
+F 1 "100n" V 5189 2250 50  0000 C CNN
+F 2 "4ms_Capacitor:C_0603" H 5388 2100 50  0001 C CNN
+F 3 "" H 5350 2250 50  0001 C CNN
+	1    5350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US DELAY?
+U 1 1 5FCD9E4E
+P 2250 4200
+AR Path="/5FCD9E4E" Ref="DELAY?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9E4E" Ref="DELAY1"  Part="1" 
+F 0 "DELAY1" H 2182 4154 50  0000 R CNN
+F 1 "100k" H 2182 4245 50  0000 R CNN
+F 2 "bowicz:Pot_16mm" H 2250 4200 50  0001 C CNN
+F 3 "~" H 2250 4200 50  0001 C CNN
+	1    2250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4050 1850 4050
+Wire Wire Line
+	2500 4200 2400 4200
+Wire Wire Line
+	2400 4200 2400 4350
+Wire Wire Line
+	2400 4350 2250 4350
+Connection ~ 2400 4200
+$Comp
+L 4ms-mech:SW_DPDT_x2 SW?
+U 1 1 5FCD9E59
+P 2700 4300
+AR Path="/5FCD9E59" Ref="SW?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9E59" Ref="SW3"  Part="1" 
+F 0 "SW3" H 2700 4585 50  0000 C CNN
+F 1 "Shake" H 2700 4494 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 2700 4300 50  0001 C CNN
+F 3 "" H 2700 4300 50  0001 C CNN
+	1    2700 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4ms-mech:SW_DPDT_x2 SW?
+U 2 1 5FCD9E5F
+P 1800 5050
+AR Path="/5FCD9E5F" Ref="SW?"  Part="2" 
+AR Path="/5FC58D8E/5FCD9E5F" Ref="SW3"  Part="2" 
+F 0 "SW3" V 1754 4862 50  0000 R CNN
+F 1 "Shake" V 1845 4862 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 1800 5050 50  0001 C CNN
+F 3 "" H 1800 5050 50  0001 C CNN
+	2    1800 5050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2000 5300 1900 5300
+Wire Wire Line
+	1900 5300 1900 5250
+Wire Wire Line
+	2500 4400 1850 4400
+Wire Wire Line
+	1850 4400 1850 4050
+Wire Wire Line
+	2900 4300 3450 4300
+Wire Wire Line
+	1800 4400 1800 4450
+Wire Wire Line
+	1850 4400 1800 4400
+Connection ~ 1850 4400
+$Comp
+L 4ms-mech:SW_DPDT_x2 SW?
+U 1 1 5FCD9E6E
+P 6800 3800
+AR Path="/5FCD9E6E" Ref="SW?"  Part="1" 
+AR Path="/5FC58D8E/5FCD9E6E" Ref="SW2"  Part="1" 
+F 0 "SW2" V 6754 3948 50  0000 L CNN
+F 1 "Sparkle" V 6845 3948 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6800 3800 50  0001 C CNN
+F 3 "" H 6800 3800 50  0001 C CNN
+	1    6800 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3900 5950 5600
+Text HLabel 9100 1950 2    50   Input ~ 0
+Out
+$Comp
+L 4ms-mech:SW_DPDT_x2 SW?
+U 2 1 5FCD9E7B
+P 6400 5150
+AR Path="/5FCD9E7B" Ref="SW?"  Part="2" 
+AR Path="/5FC58D8E/5FCD9E7B" Ref="SW2"  Part="2" 
+F 0 "SW2" V 6446 5298 50  0000 L CNN
+F 1 "Sparkle" V 6355 5298 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6400 5150 50  0001 C CNN
+F 3 "" H 6400 5150 50  0001 C CNN
+	2    6400 5150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6750 4550 6500 4550
+Text GLabel 8050 1800 1    50   Input ~ 0
+MostfetBias
+Text GLabel 2000 5300 2    50   Input ~ 0
+Delay
+Text HLabel 3550 1650 0    50   Input ~ 0
+In
+$Comp
+L 4ms-passives:CAP_TH C?
+U 1 1 5EF79358
+P 3950 1650
+AR Path="/5EF79358" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF79358" Ref="C8"  Part="1" 
+F 0 "C8" V 3698 1650 50  0000 C CNN
+F 1 "100n" V 3789 1650 50  0000 C CNN
+F 2 "4ms_Capacitor:C_0603" H 3988 1500 50  0001 C CNN
+F 3 "" H 3950 1650 50  0001 C CNN
+	1    3950 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF79357
+P 4300 1450
+AR Path="/5EF79357" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF79357" Ref="R1"  Part="1" 
+F 0 "R1" H 4232 1404 50  0000 R CNN
+F 1 "1M" H 4232 1495 50  0000 R CNN
+F 2 "4ms_Resistor:R_0402" H 4300 1450 50  0001 C CNN
+F 3 "~" H 4300 1450 50  0001 C CNN
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 4950 1    50   Input ~ 0
+RepeatIn
+Text GLabel 6700 4000 3    50   Input ~ 0
+RepeatOut
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF78D77
+P 3700 1850
+AR Path="/5EF78D77" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF78D77" Ref="R8"  Part="1" 
+F 0 "R8" H 3632 1804 50  0000 R CNN
+F 1 "1M" H 3632 1895 50  0000 R CNN
+F 2 "4ms_Resistor:R_0402" H 3700 1850 50  0001 C CNN
+F 3 "~" H 3700 1850 50  0001 C CNN
+	1    3700 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 1650 3700 1750
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF78D7E
+P 3700 1950
+AR Path="/5EF78D7E" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF78D7E" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 3700 1700 50  0001 C CNN
+F 1 "GND" H 3705 1777 50  0000 C CNN
+F 2 "" H 3700 1950 50  0001 C CNN
+F 3 "" H 3700 1950 50  0001 C CNN
+	1    3700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF79313
+P 4300 1850
+AR Path="/5EF79313" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF79313" Ref="R11"  Part="1" 
+F 0 "R11" H 4232 1804 50  0000 R CNN
+F 1 "1M" H 4232 1895 50  0000 R CNN
+F 2 "4ms_Resistor:R_0402" H 4300 1850 50  0001 C CNN
+F 3 "~" H 4300 1850 50  0001 C CNN
+	1    4300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1550 4300 1650
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF79314
+P 4300 1950
+AR Path="/5EF79314" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79314" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 4300 1700 50  0001 C CNN
+F 1 "GND" H 4305 1777 50  0000 C CNN
+F 2 "" H 4300 1950 50  0001 C CNN
+F 3 "" H 4300 1950 50  0001 C CNN
+	1    4300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0158
+U 1 1 5EF79315
+P 4300 1350
+F 0 "#PWR0158" H 4300 1200 50  0001 C CNN
+F 1 "+9V" H 4315 1523 50  0000 C CNN
+F 2 "" H 4300 1350 50  0001 C CNN
+F 3 "" H 4300 1350 50  0001 C CNN
+	1    4300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1650 4100 1650
+Connection ~ 4300 1650
+Wire Wire Line
+	4300 1650 4300 1750
+Wire Wire Line
+	3800 1650 3700 1650
+Wire Wire Line
+	3550 1650 3700 1650
+Connection ~ 3700 1650
+$Comp
+L Device:Q_NJFET_DSG Q1
+U 1 1 5EF79316
+P 4500 1650
+F 0 "Q1" H 4691 1696 50  0000 L CNN
+F 1 "MPF102" H 4691 1605 50  0000 L CNN
+F 2 "bowicz:TO-92" H 4700 1750 50  0001 C CNN
+F 3 "~" H 4500 1650 50  0001 C CNN
+	1    4500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0159
+U 1 1 5F086569
+P 4600 1450
+F 0 "#PWR0159" H 4600 1300 50  0001 C CNN
+F 1 "+9V" H 4615 1623 50  0000 C CNN
+F 2 "" H 4600 1450 50  0001 C CNN
+F 3 "" H 4600 1450 50  0001 C CNN
+	1    4600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5F08D41A
+P 4600 2050
+AR Path="/5F08D41A" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5F08D41A" Ref="R14"  Part="1" 
+F 0 "R14" H 4532 2004 50  0000 R CNN
+F 1 "3k3" H 4532 2095 50  0000 R CNN
+F 2 "4ms_Resistor:R_0402" H 4600 2050 50  0001 C CNN
+F 3 "~" H 4600 2050 50  0001 C CNN
+	1    4600 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF79319
+P 4600 2150
+AR Path="/5EF79319" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF79319" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 4600 1900 50  0001 C CNN
+F 1 "GND" H 4605 1977 50  0000 C CNN
+F 2 "" H 4600 2150 50  0001 C CNN
+F 3 "" H 4600 2150 50  0001 C CNN
+	1    4600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1950 4600 1900
+Wire Wire Line
+	5350 2400 5350 2550
+Connection ~ 5350 3200
+Wire Wire Line
+	5350 2900 5350 2850
+Connection ~ 5350 2550
+Wire Wire Line
+	4600 1900 5350 1900
+Wire Wire Line
+	5350 1900 5350 2100
+Connection ~ 4600 1900
+Wire Wire Line
+	4600 1900 4600 1850
+$Comp
+L 4ms-passives:CAP-ELEC-TH C?
+U 1 1 5EF7931A
+P 5900 1900
+AR Path="/5EF7931A" Ref="C?"  Part="1" 
+AR Path="/5FC58D8E/5EF7931A" Ref="C9"  Part="1" 
+F 0 "C9" V 6154 1850 45  0000 C CNN
+F 1 "10u" V 6070 1850 45  0000 C CNN
+F 2 "bowicz:Cap_Electrolytic_TH" H 5930 2050 20  0001 C CNN
+F 3 "" H 5900 1900 60  0001 C CNN
+	1    5900 1900
+	0    -1   1    0   
+$EndComp
+Connection ~ 5350 1900
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF7931B
+P 6450 1600
+AR Path="/5EF7931B" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF7931B" Ref="R2"  Part="1" 
+F 0 "R2" H 6382 1554 50  0000 R CNN
+F 1 "100k" H 6382 1645 50  0000 R CNN
+F 2 "4ms_Resistor:R_0402" H 6450 1600 50  0001 C CNN
+F 3 "~" H 6450 1600 50  0001 C CNN
+	1    6450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF7931C
+P 6450 1500
+AR Path="/5EF7931C" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF7931C" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 6450 1250 50  0001 C CNN
+F 1 "GND" H 6455 1327 50  0000 C CNN
+F 2 "" H 6450 1500 50  0001 C CNN
+F 3 "" H 6450 1500 50  0001 C CNN
+	1    6450 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 1700 6450 1900
+Connection ~ 6450 1900
+Wire Wire Line
+	5350 1900 5800 1900
+Wire Wire Line
+	6100 1900 6450 1900
+Wire Wire Line
+	6450 1900 6450 2050
+$Comp
+L Device:R_Small_US R?
+U 1 1 5EF7931D
+P 6450 2650
+AR Path="/5EF7931D" Ref="R?"  Part="1" 
+AR Path="/5FC58D8E/5EF7931D" Ref="R18"  Part="1" 
+F 0 "R18" H 6382 2604 50  0000 R CNN
+F 1 "100k" H 6382 2695 50  0000 R CNN
+F 2 "4ms_Resistor:R_0402" H 6450 2650 50  0001 C CNN
+F 3 "~" H 6450 2650 50  0001 C CNN
+	1    6450 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-power:GND #PWR?
+U 1 1 5EF7931E
+P 6450 2750
+AR Path="/5EF7931E" Ref="#PWR?"  Part="1" 
+AR Path="/5FC58D8E/5EF7931E" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 6450 2500 50  0001 C CNN
+F 1 "GND" H 6455 2577 50  0000 C CNN
+F 2 "" H 6450 2750 50  0001 C CNN
+F 3 "" H 6450 2750 50  0001 C CNN
+	1    6450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2350 6450 2450
+Wire Wire Line
+	6450 2450 7500 2450
+Connection ~ 6450 2450
+Wire Wire Line
+	6450 2450 6450 2550
+Wire Wire Line
+	6600 2200 7650 2200
+Wire Wire Line
+	6900 4000 6900 4400
+Wire Wire Line
+	6400 5650 6400 5600
+Connection ~ 6400 5600
+Wire Wire Line
+	6400 5600 7500 5600
+Wire Wire Line
+	6300 5600 6400 5600
+Wire Wire Line
+	5950 5600 6100 5600
+Wire Wire Line
+	6500 4550 6500 4950
+Wire Wire Line
+	6400 5350 6400 5600
+Wire Wire Line
+	6350 3550 6350 3700
+Wire Wire Line
+	6800 3600 6800 3550
+Wire Wire Line
+	6800 3550 6350 3550
+Connection ~ 6350 3550
+Wire Wire Line
+	5750 3400 6150 3400
+Wire Wire Line
+	5450 3400 5350 3400
+Wire Wire Line
+	7500 2450 7500 5600
+Wire Wire Line
+	7050 4550 7100 4550
+Wire Wire Line
+	7100 4550 7100 4400
+Wire Wire Line
+	7100 4400 6900 4400
+Connection ~ 6900 4400
+$EndSCHEMATC

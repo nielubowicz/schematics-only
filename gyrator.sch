@@ -1,0 +1,291 @@
+EESchema Schematic File Version 4
+LIBS:gyrator-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "sam. 04 avril 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4ms-headers:Conn_01x01 J1
+U 1 1 5D2D62B6
+P 2050 1900
+F 0 "J1" H 1968 1675 50  0000 C CNN
+F 1 "9V" H 1968 1766 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 2050 1900 50  0001 C CNN
+F 3 "" H 2050 1900 50  0001 C CNN
+	1    2050 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J2
+U 1 1 5D2D6860
+P 2050 2300
+F 0 "J2" H 1968 2075 50  0000 C CNN
+F 1 "GND" H 1968 2166 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 2050 2300 50  0001 C CNN
+F 3 "" H 2050 2300 50  0001 C CNN
+	1    2050 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 1900 2500 1900
+Wire Wire Line
+	2650 2300 2500 2300
+$Comp
+L 4ms-power:GND #PWR0101
+U 1 1 5D2D87F9
+P 2500 2300
+F 0 "#PWR0101" H 2500 2050 50  0001 C CNN
+F 1 "GND" H 2505 2127 50  0000 C CNN
+F 2 "" H 2500 2300 50  0001 C CNN
+F 3 "" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 2300
+Wire Wire Line
+	2500 2300 2250 2300
+$Comp
+L 4ms-power:PWR_FLAG #FLG0101
+U 1 1 5D2D8E52
+P 2650 2300
+F 0 "#FLG0101" H 2650 2375 50  0001 C CNN
+F 1 "PWR_FLAG" V 2650 2428 50  0000 L CNN
+F 2 "" H 2650 2300 50  0001 C CNN
+F 3 "" H 2650 2300 50  0001 C CNN
+	1    2650 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L 4ms-power:PWR_FLAG #FLG0102
+U 1 1 5D2D9100
+P 2650 1900
+F 0 "#FLG0102" H 2650 1975 50  0001 C CNN
+F 1 "PWR_FLAG" V 2650 2028 50  0000 L CNN
+F 2 "" H 2650 1900 50  0001 C CNN
+F 3 "" H 2650 1900 50  0001 C CNN
+	1    2650 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+9V #PWR0102
+U 1 1 5D2D9287
+P 2500 1900
+F 0 "#PWR0102" H 2500 1750 50  0001 C CNN
+F 1 "+9V" H 2515 2073 50  0000 C CNN
+F 2 "" H 2500 1900 50  0001 C CNN
+F 3 "" H 2500 1900 50  0001 C CNN
+	1    2500 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 1900
+Wire Wire Line
+	2500 1900 2650 1900
+$Comp
+L Device:R_Small_US R2
+U 1 1 5D3A965B
+P 4250 3600
+F 0 "R2" H 4318 3646 50  0000 L CNN
+F 1 "100k" H 4318 3555 50  0000 L CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4250 3600 50  0001 C CNN
+F 3 "~" H 4250 3600 50  0001 C CNN
+	1    4250 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D3A9A29
+P 5350 2950
+F 0 "R1" H 5418 2996 50  0000 L CNN
+F 1 "100" H 5418 2905 50  0000 L CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5350 2950 50  0001 C CNN
+F 3 "~" H 5350 2950 50  0001 C CNN
+	1    5350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH Cs1
+U 1 1 5D3A9D66
+P 4250 2500
+F 0 "Cs1" V 4450 2450 50  0000 L CNN
+F 1 "100n" V 4365 2455 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 4288 2350 50  0001 C CNN
+F 3 "" H 4250 2500 50  0001 C CNN
+	1    4250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-passives:CAP_TH C1
+U 1 1 5D3AA369
+P 4250 3100
+F 0 "C1" H 4365 3146 50  0000 L CNN
+F 1 "100n" H 4365 3055 50  0000 L CNN
+F 2 "4ms-footprints:Cap_Ceramic_TH" H 4288 2950 50  0001 C CNN
+F 3 "" H 4250 3100 50  0001 C CNN
+	1    4250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM741 U1
+U 1 1 5D3AA98D
+P 5000 3300
+F 0 "U1" H 5344 3346 50  0000 L CNN
+F 1 "LM741" H 5344 3255 50  0000 L CNN
+F 2 "4ms-footprints:DIP_8pin_TL072_TH" H 5050 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 5150 3450 50  0001 C CNN
+	1    5000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3250 4250 3500
+Wire Wire Line
+	4700 3200 4250 3200
+Wire Wire Line
+	4250 3200 4250 3250
+Connection ~ 4250 3250
+Wire Wire Line
+	4700 3400 4700 3800
+Wire Wire Line
+	4700 3800 5350 3800
+Wire Wire Line
+	5350 3800 5350 3550
+Wire Wire Line
+	5350 3300 5300 3300
+Wire Wire Line
+	5350 3300 5350 3050
+Connection ~ 5350 3300
+$Comp
+L 4ms-headers:Conn_01x01 J4
+U 1 1 5D3B2183
+P 5750 3550
+F 0 "J4" H 5830 3592 50  0000 L CNN
+F 1 "Out" H 5830 3501 50  0000 L CNN
+F 2 "4ms_Connector:WireHole" H 5750 3550 50  0001 C CNN
+F 3 "" H 5750 3550 50  0001 C CNN
+	1    5750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3550 5350 3550
+Connection ~ 5350 3550
+Wire Wire Line
+	5350 3550 5350 3300
+$Comp
+L 4ms-power:GND #PWR0103
+U 1 1 5D3B35B1
+P 4250 3800
+F 0 "#PWR0103" H 4250 3550 50  0001 C CNN
+F 1 "GND" H 4255 3627 50  0000 C CNN
+F 2 "" H 4250 3800 50  0001 C CNN
+F 3 "" H 4250 3800 50  0001 C CNN
+	1    4250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-power:GND #PWR0104
+U 1 1 5D3B3969
+P 4900 3600
+F 0 "#PWR0104" H 4900 3350 50  0001 C CNN
+F 1 "GND" H 4905 3427 50  0000 C CNN
+F 2 "" H 4900 3600 50  0001 C CNN
+F 3 "" H 4900 3600 50  0001 C CNN
+	1    4900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0105
+U 1 1 5D3B3BE7
+P 4900 3000
+F 0 "#PWR0105" H 4900 2850 50  0001 C CNN
+F 1 "+9V" H 4915 3173 50  0000 C CNN
+F 2 "" H 4900 3000 50  0001 C CNN
+F 3 "" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 3600
+NoConn ~ 5100 3600
+Wire Wire Line
+	4250 2850 5050 2850
+Wire Wire Line
+	4250 2850 4250 2950
+Connection ~ 4250 2850
+Wire Wire Line
+	4250 2850 4250 2650
+Wire Wire Line
+	4250 3700 4250 3800
+$Comp
+L 4ms-passives:SOLDER J5
+U 1 1 5D41681B
+P 4000 2350
+F 0 "J5" H 4000 2555 50  0000 C CNN
+F 1 "Bandpass" H 4000 2464 50  0000 C CNN
+F 2 "4ms_SolderJumper:JUMPER_SMD_1x2" H 4050 2250 50  0001 C CNN
+F 3 "" V 4000 2350 50  0001 C CNN
+	1    4000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1750 4700 1950
+$Comp
+L Device:R_Small_US Rs1
+U 1 1 5D3A9174
+P 4700 2050
+F 0 "Rs1" V 4850 2000 50  0000 L CNN
+F 1 "10k" V 4768 2005 50  0000 L CNN
+F 2 "4ms_Resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 4700 2050 50  0001 C CNN
+F 3 "~" H 4700 2050 50  0001 C CNN
+	1    4700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4ms-headers:Conn_01x01 J3
+U 1 1 5D2DB6C6
+P 4700 1550
+F 0 "J3" V 4618 1325 50  0000 C CNN
+F 1 "In" V 4618 1416 50  0000 C CNN
+F 2 "4ms_Connector:WireHole" H 4700 1550 50  0001 C CNN
+F 3 "" H 4700 1550 50  0001 C CNN
+	1    4700 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 4ms-passives:SOLDER_1x3 J6
+U 1 1 5D422008
+P 4750 2350
+F 0 "J6" H 4800 2463 50  0000 C CNN
+F 1 "Notch" H 4800 2554 50  0000 C CNN
+F 2 "4ms_SolderJumper:JUMPER_SMD_1x3" H 4960 1935 50  0001 C CNN
+F 3 "" V 4790 2350 50  0001 C CNN
+	1    4750 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 2350 5050 2350
+Wire Wire Line
+	5050 2350 5050 2850
+Connection ~ 5050 2850
+Wire Wire Line
+	5050 2850 5350 2850
+Wire Wire Line
+	4700 2250 4700 2150
+Wire Wire Line
+	4550 2350 4250 2350
+Wire Wire Line
+	4250 2350 4100 2350
+Connection ~ 4250 2350
+Wire Wire Line
+	3900 2350 3900 3800
+Wire Wire Line
+	3900 3800 4250 3800
+Connection ~ 4250 3800
+$EndSCHEMATC
