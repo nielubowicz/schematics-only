@@ -38,7 +38,7 @@ $EndComp
 Wire Wire Line
 	900  1100 1150 1100
 $Comp
-L mini-fieldhouse-delay-rescue:NE555-Timer U5
+L silver-birch-switchable-order-rescue:NE555-Timer-mini-fieldhouse-delay-rescue U5
 U 1 1 5FFF4315
 P 3900 3100
 F 0 "U5" H 3750 3700 50  0000 C CNN
@@ -333,7 +333,7 @@ PO
 Text HLabel 6000 2950 0    50   Input ~ 0
 JO
 $Comp
-L mini-fieldhouse-delay-rescue:CD4053B-Analog_Switch U6
+L silver-birch-switchable-order-rescue:CD4053B-Analog_Switch-mini-fieldhouse-delay-rescue U6
 U 1 1 5FDA877F
 P 6550 4650
 F 0 "U6" H 6400 5550 50  0000 C CNN
@@ -366,7 +366,7 @@ F 3 "" H 6450 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mini-fieldhouse-delay-rescue:NE555-Timer U7
+L silver-birch-switchable-order-rescue:NE555-Timer-mini-fieldhouse-delay-rescue U7
 U 1 1 5FDA8795
 P 4450 5450
 F 0 "U7" H 4300 6050 50  0000 C CNN

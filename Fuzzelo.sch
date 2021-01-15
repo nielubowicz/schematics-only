@@ -288,17 +288,6 @@ F 3 "~" H 1850 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D PD1
-U 1 1 5CFF6E95
-P 1400 1250
-F 0 "PD1" V 1354 1329 50  0000 L CNN
-F 1 "1n4002" V 1445 1329 50  0000 L CNN
-F 2 "bowicz:Diode" H 1400 1250 50  0001 C CNN
-F 3 "~" H 1400 1250 50  0001 C CNN
-	1    1400 1250
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 5CFF729D
 P 1550 1500
@@ -617,12 +606,12 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5D083869
-P 1550 1100
-F 0 "#FLG0101" H 1550 1175 50  0001 C CNN
-F 1 "PWR_FLAG" H 1550 1274 50  0000 C CNN
-F 2 "" H 1550 1100 50  0001 C CNN
-F 3 "~" H 1550 1100 50  0001 C CNN
-	1    1550 1100
+P 1600 1100
+F 0 "#FLG0101" H 1600 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 1274 50  0000 C CNN
+F 2 "" H 1600 1100 50  0001 C CNN
+F 3 "~" H 1600 1100 50  0001 C CNN
+	1    1600 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -676,12 +665,12 @@ Connection ~ 4000 1100
 $Comp
 L 4ms-headers:Conn_01x01 J1
 U 1 1 5D316EC8
-P 1150 1100
-F 0 "J1" H 1068 875 50  0000 C CNN
-F 1 "9V" H 1068 966 50  0000 C CNN
-F 2 "bowicz:SmallWireHole" H 1150 1100 50  0001 C CNN
-F 3 "" H 1150 1100 50  0001 C CNN
-	1    1150 1100
+P 900 1100
+F 0 "J1" H 818 875 50  0000 C CNN
+F 1 "9V" H 818 966 50  0000 C CNN
+F 2 "bowicz:SmallWireHole" H 900 1100 50  0001 C CNN
+F 3 "" H 900 1100 50  0001 C CNN
+	1    900  1100
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -816,8 +805,6 @@ F 3 "" H 6000 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 1100 1400 1100
-Wire Wire Line
 	1550 1500 1400 1500
 Wire Wire Line
 	7150 3750 7250 3750
@@ -833,12 +820,7 @@ F 3 "" H 6750 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6750 1200
-Connection ~ 1400 1100
-Wire Wire Line
-	1400 1100 1550 1100
 Connection ~ 1850 1100
-Wire Wire Line
-	1400 1400 1400 1500
 Wire Wire Line
 	1850 1500 1850 1400
 Connection ~ 1400 1500
@@ -858,9 +840,6 @@ F 3 "~" H 1850 1500 50  0001 C CNN
 	1    1850 1500
 	-1   0    0    1   
 $EndComp
-Connection ~ 1550 1100
-Wire Wire Line
-	1550 1100 1850 1100
 Connection ~ 3600 1100
 Wire Wire Line
 	3600 1100 3550 1100
@@ -1258,17 +1237,6 @@ F 3 "" H 10700 3350 50  0001 C CNN
 	1    10700 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L bowicz:SW_Rotary8 WAVE1
-U 1 1 5FF66BCF
-P 10050 2550
-F 0 "WAVE1" H 9950 2125 50  0000 C CNN
-F 1 "1P8T" H 9950 2216 50  0000 C CNN
-F 2 "bowicz:1P8T_Rotary" H 9850 3250 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 9850 3250 50  0001 C CNN
-	1    10050 2550
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	10700 3350 10450 3350
 Connection ~ 10700 3350
@@ -1316,8 +1284,6 @@ Wire Wire Line
 Wire Wire Line
 	10500 2450 10500 2150
 Wire Wire Line
-	10500 2450 10450 2450
-Wire Wire Line
 	10500 2150 10700 2150
 Wire Wire Line
 	10550 2350 10700 2350
@@ -1326,9 +1292,38 @@ Wire Wire Line
 Wire Wire Line
 	10600 2550 10700 2550
 Wire Wire Line
+	10550 2550 10550 2350
+$Comp
+L bowicz:SW_Rotary8 WAVE1
+U 1 1 5FFAC031
+P 10050 2550
+F 0 "WAVE1" H 9950 2125 50  0000 C CNN
+F 1 "1P8T" H 9950 2216 50  0000 C CNN
+F 2 "bowicz:1P8T_Rotary" H 9850 3250 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf" H 9850 3250 50  0001 C CNN
+	1    10050 2550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
 	10550 2550 10450 2550
 Wire Wire Line
 	10450 2550 10450 2650
 Wire Wire Line
-	10550 2550 10550 2350
+	10500 2450 10450 2450
+$Comp
+L 4ms-passives:D_Schottky PD1
+U 1 1 5FFA8F5A
+P 1250 1100
+F 0 "PD1" H 1250 884 50  0000 C CNN
+F 1 "1n5817" H 1250 975 50  0000 C CNN
+F 2 "bowicz:Diode" H 1250 1100 50  0001 C CNN
+F 3 "" H 1250 1100 50  0001 C CNN
+	1    1250 1100
+	-1   0    0    1   
+$EndComp
+Connection ~ 1600 1100
+Wire Wire Line
+	1600 1100 1850 1100
+Wire Wire Line
+	1400 1100 1600 1100
 $EndSCHEMATC

@@ -919,7 +919,7 @@ Connection ~ 2600 1250
 Wire Wire Line
 	2600 1250 2600 1300
 $Comp
-L mini-fieldhouse-delay-rescue:NE555-Timer U?
+L SW-octave-fuzz-rescue:NE555-Timer-mini-fieldhouse-delay-rescue U?
 U 1 1 5FF5A7AF
 P 1300 5850
 AR Path="/5FD55C66/5FF5A7AF" Ref="U?"  Part="1" 

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:mxr-dist++-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -448,8 +447,6 @@ Connection ~ 8000 6250
 Wire Wire Line
 	8000 6200 8000 6250
 Wire Wire Line
-	7600 5850 7600 5800
-Wire Wire Line
 	8450 6250 8000 6250
 Wire Wire Line
 	8000 5400 8450 5400
@@ -661,7 +658,7 @@ L Device:R_Small_US R2
 U 1 1 5DE4B721
 P 2100 4450
 F 0 "R2" H 2168 4496 50  0000 L CNN
-F 1 "10k" H 2168 4405 50  0000 L CNN
+F 1 "1M" H 2168 4405 50  0000 L CNN
 F 2 "bowicz:Resistor" H 2100 4450 50  0001 C CNN
 F 3 "~" H 2100 4450 50  0001 C CNN
 	1    2100 4450
@@ -763,7 +760,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 1400 1550 1400
 $Comp
-L power:MAX1044 PU1
+L mxr-dist++-rescue:MAX1044-power PU1
 U 1 1 5D6BD1D6
 P 3200 1150
 F 0 "PU1" H 3200 1467 50  0000 C CNN
